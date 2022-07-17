@@ -1,0 +1,13 @@
+
+footer{
+    color: #fefefe;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 10px -4px 10px rgb(38, 112, 182);
+    padding: 15px;
+
+    
+    
+}
