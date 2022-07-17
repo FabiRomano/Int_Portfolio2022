@@ -1,0 +1,16 @@
+.row{
+    color: white;
+    box-shadow: 10px -4px 10px rgb(38, 112, 182);
+
+
+}
+div{
+    padding: 20px;
+   
+
+}
+
+h2, h4{
+    padding: 3px;
+    display: inline;
+}
