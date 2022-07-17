@@ -20,7 +20,8 @@
  }
  
  .btn{
-     border-width:medium;
+    box-shadow: -1px -15px 10px -3px rgb(186, 22, 207);
+    border-width:medium;
      border-radius: 30px;
  }
  /*---para la vista de celular ---*/
