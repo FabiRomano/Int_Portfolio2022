@@ -2,30 +2,30 @@
 div{
     text-align: center;
     color: white;
-    box-shadow: 10px -4px 10px rgb( 38, 12, 182);
+    box-shadow: 10px -4px 10px 12,rgba(226, 28, 160, 0.5);
 }
 
 /* etiqueta fotoperfil */
     @media (min-width:576px) {
 #fotoperfil{
     position: absolute;
-    width: 180px;
-    border-radius: 80%;
+    width: 150px;
+    border-radius: 70%;
     left: 20px;;
-    top: 400px;
-    box-shadow: 4px -3px 4px rgb(252, 50, 128);
+    top: 450px;
+    box-shadow: -4px -2px 4px rgba(226, 28, 160, 0.5);
 
-}
-}
+
+}}
 
 @media (max-width:575px) {
     #fotoperfil{
         position: absolute;
-        width: 200px;
+        width: 160px;
         border-radius: 80%;
-        left:145px;
+        left:125px;
         top: 610px;
-        box-shadow: 4px -3px 4px rgb(252, 50, 128);
+        box-shadow: 4px -3px 4px rgba(226, 28, 160, 0.5);
 
     }
     }
@@ -33,8 +33,8 @@ div{
 /* etiqueta de nombre */
 #nombre{
     font-weight: bold;
-    margin-top: 18%;
-    box-shadow: 10px -4px 10px rgb(186, 22, 207)
+    margin-top: 20%;
+    /* box-shadow: 10px -4px 10px rgb(186, 22, 207) */
    
 }
 

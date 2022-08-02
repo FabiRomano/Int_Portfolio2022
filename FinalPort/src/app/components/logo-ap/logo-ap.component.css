@@ -1,43 +1,133 @@
 .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
- }
- .redes{
-     margin: right 0.8em;
- 
- }
- 
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
  #logoAP{
      width: 140px;
-     border-radius: 30px;
+     border-radius: 50px;
+     margin-top: 5px;
  }
+
+
+.button
+{
+    float: right;
+    margin-top: -70px;
+    min-width:400px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.button a
+{
+    text-decoration: none;
+    font-size: 35px;
+    width: 60px;
+    height: 50px;
+  
+    text-align: center;
+    background: #251b21;
+    border-radius: 50%;
+    box-shadow: -0px 5px 10px rgba(226, 28, 160, 0.5);
+    transition: all .3s ease-in-out;
+  
+}
+.button a:hover
+{
+    transform: scale(1.50);
+  
+}
+
+
+
+#facebook
+{
+    color:   #1877f2;
+
+}
  
- img{
+ #instagram
+{
+    color:  #c32aa3 ;
+}
+
+#twitter
+{
+    color: #1da1f2;
+}
+
+#github
+{
+     color:#f1f1f1;
+}
+
+.btn
+
+{
+    border-width:medium;
+    border-radius: 30px;
+}
+ 
+
+
+ /*---para la vista de celular ---*/
+ 
+ @media (max-width: 575px){
+    .container{
+        flex-direction: column;
+    
+    }
+    
+    .button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button a{
+        margin: 0.3em;
+    }
+   }
+
+    /* Codigo de foto de redes */
+/* .redes{
+    float: right;
+    margin-top: 50px;
+    min-width: 100vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: calc(center); 
+} 
+*/
+
+ /* img{
      width: 60px;
      border-radius: 45px;
     
  }
  
  .btn{
-    box-shadow: -1px -15px 10px -3px rgb(186, 22, 207);
-    border-width:medium;
+     border-width:medium;
      border-radius: 30px;
  }
- /*---para la vista de celular ---*/
- 
- @media (max-width: 575px){
- .container{
-     flex-direction: column;
- 
- }
- 
- .redes{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- .redes img{
-     margin: 0.3em;
- }
- }
+
+#facebook{
+   color:   #1877f2;
+}
+
+
+#instagram{
+   color:  #c32aa3 ;
+}
+#twitter{
+   color: #1da1f2;
+}
+#github{
+    color:#ff0000;
+} */
+
+
+
