@@ -20,13 +20,14 @@ public class PersonaController {
         this.personaService = personaService;
     }
     
-    @GetMapping("/id/{id}")
-    public ResponseEntity<Persona> obtenerPersona(@PathVariable("Id")long id){
+    @GetMapping("/ver/{id}")
+    public ResponseEntity<Persona> obtenerPersona(@PathVariable long id){
         
         Persona persona = personaService.buscarPersonaPorId(id);
         
         return new ResponseEntity<>(persona, HttpStatus.OK);
-        }
+       
+     }
     
     @PutMapping("/update")
     
@@ -37,4 +38,4 @@ public class PersonaController {
        return new ResponseEntity<>(updatePersona,HttpStatus.OK);
 }
     
-}
+    }
