@@ -27,6 +27,7 @@ public class Persona implements Serializable{
     private String acercaDe;
     private String fotoPerfil;
     
+    
     @OneToMany (fetch = FetchType.LAZY, mappedBy = "idEst")
     private List<Estudios> estudiosList;
     
