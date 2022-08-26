@@ -7,10 +7,10 @@ import { Persona } from '../models/persona';
 @Injectable({
   providedIn: 'root'
 })
-export class PersonaService {
+export class AcercaDeService {
   private apiServerUrl=environment.apiBaseUrl;
-
-  constructor(private http: HttpClient) { }
+  
+  constructor(private http: HttpClient) {}
 
   public getPersona():Observable<Persona> {
      return this.http.get<Persona>(`${this.apiServerUrl}/persona/id/1`);

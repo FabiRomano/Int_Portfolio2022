@@ -20,21 +20,22 @@ public class Proyectos implements Serializable{
     private String nombreProyectos;
     private String inicioProyectos;
     private String finProyectos;
-    private Short encursoProyectos;
+    private String linkProyecto;
     private String descripcionProyectos;
 
     public Proyectos() {
     }
 
-    public Proyectos(long idProyectos, String nombreProyectos, String inicioProyectos, String finProyectos, Short encursoProyectos, String descripcionProyectos) {
+    public Proyectos(long idProyectos, String nombreProyectos, String inicioProyectos, String finProyectos, String linkProyecto, String descripcionProyectos) {
         this.idProyectos = idProyectos;
         this.nombreProyectos = nombreProyectos;
         this.inicioProyectos = inicioProyectos;
         this.finProyectos = finProyectos;
-        this.encursoProyectos = encursoProyectos;
+        this.linkProyecto = linkProyecto;
         this.descripcionProyectos = descripcionProyectos;
     }
 
+ 
 
     
     

@@ -19,27 +19,27 @@ public class Experiencia implements Serializable{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long idExp;
     private String empresaExp;
-    private short actualExp;
     private String fechaInicioExp;
     private String fechaFinExp;
     private String descripicionExp;
-    private String referenciasExp;
+    
 
     public Experiencia() {
     }
 
-    public Experiencia(long idExp, String empresaExp, short actualExp, String fechaInicioExp, String fechaFinExp, String descripicionExp, String referenciasExp) {
+    public Experiencia(long idExp, String empresaExp, String fechaInicioExp, String fechaFinExp, String descripicionExp) {
         this.idExp = idExp;
         this.empresaExp = empresaExp;
-        this.actualExp = actualExp;
         this.fechaInicioExp = fechaInicioExp;
         this.fechaFinExp = fechaFinExp;
         this.descripicionExp = descripicionExp;
-        this.referenciasExp = referenciasExp;
+    }
+
+  
     }
     
     
     
-}
+
 
 

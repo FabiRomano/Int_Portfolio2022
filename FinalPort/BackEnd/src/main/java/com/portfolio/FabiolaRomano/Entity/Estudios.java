@@ -19,20 +19,20 @@ public class Estudios implements Serializable{
     private String establecimientoEst;
     private String fechaInicioEst;
     private String fechaFinEst;
-    private short actualEst;
     private String certificadoEst;
+    private String img;
 
     public Estudios() {
     }
 
-    public Estudios(long idEst, String establecimientoEst, String fechaInicioEst, String fechaFinEst, short actualEst, String certificadoEst) {
+    public Estudios(long idEst, String establecimientoEst, String fechaInicioEst, String fechaFinEst, String certificadoEst) {
         this.idEst = idEst;
         this.establecimientoEst = establecimientoEst;
         this.fechaInicioEst = fechaInicioEst;
         this.fechaFinEst = fechaFinEst;
-        this.actualEst = actualEst;
         this.certificadoEst = certificadoEst;
     }
-    
+
+  
     
 }
