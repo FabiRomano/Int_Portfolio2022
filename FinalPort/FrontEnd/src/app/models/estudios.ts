@@ -1,5 +1,5 @@
 export interface Estudios{
-    id:number;
+    idEst:number;
     establecimientoEst: string;
     fechaInicioEst:string;
     fechaFinEst: string;

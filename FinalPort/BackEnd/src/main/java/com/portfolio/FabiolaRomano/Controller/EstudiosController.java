@@ -48,7 +48,7 @@ public class EstudiosController {
           return new ResponseEntity<>(nuevoEstudios,HttpStatus.CREATED);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> borrarEstudios(@PathVariable ("id") Long id){
         estudiosService.eliminarEstudios(id);
         return new ResponseEntity<>(HttpStatus.OK);
