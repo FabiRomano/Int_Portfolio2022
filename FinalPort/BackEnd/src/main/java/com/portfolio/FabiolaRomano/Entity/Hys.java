@@ -18,19 +18,20 @@ public class Hys implements Serializable{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idHys;
     private String nombreHys;
-    private String fotoSHys;
-    private int porcentajeSHys;
+    private String fotoHys;
+    private int porcentajeHys;
 
     public Hys() {
     }
 
-    public Hys(Long idHys, String nombreHys, String fotoSHys, int porcentajeSHys) {
+    public Hys(Long idHys, String nombreHys, String fotoHys, int porcentajeHys) {
         this.idHys = idHys;
         this.nombreHys = nombreHys;
-        this.fotoSHys = fotoSHys;
-        this.porcentajeSHys = porcentajeSHys;
+        this.fotoHys = fotoHys;
+        this.porcentajeHys = porcentajeHys;
     }
-    
+
+   
     
     
 }
