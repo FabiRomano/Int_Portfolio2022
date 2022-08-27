@@ -1,5 +1,5 @@
 .row{
-    padding: 13px;
+    padding: 20px;
     color: white;
    
  
@@ -7,7 +7,7 @@
 
 div{
     padding: 20px;
-    background-color:  rgb(46, 37, 170);
+    /* background-color:  rgb(46, 37, 170); */
  
 
 
@@ -22,4 +22,8 @@ h2, h4{
 {
     box-shadow: 10px -4px 10px rgba(226, 28, 226, 0.5);
 
+}
+.img-responsive{
+    width: 200px;
+   border-radius: 15px;
 }

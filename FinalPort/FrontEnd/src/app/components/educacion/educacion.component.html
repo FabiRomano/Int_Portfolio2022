@@ -1,14 +1,33 @@
-<div class="row" *ngFor="let education of educations">
+<div class="row" >
     
     <h2 id="title">Educacion</h2>
    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
+    <div class="col-lg-4" *ngFor="let education of educations">
+        <div class="col-text-center">
+                 <a
+                    class="btn btn-primary tooltips"
+                    data-placement="top"
+                    data-toggle="tooltip"
+                    data-original-title="Edit"
+                    ><i class="fa fa-pencil"></i>
+                  </a>
+
+                  <a
+                  class="btn btn-secondary tooltips"
+                  data-placement="top"
+                  data-toggle="tooltip"
+                  data-original-title="Delete"
+                  ><i class="fa fa-times"></i>
+                </a> <br>
+                </div>
+
+
       <ul>
           <li>
-              <h2>{{education.certificadoEdu}}</h2> <br> 
-              <h4>{{education.fechaInicioEdu + "- " + education.fechaFinEdu}}</h4> 
+             <h4>{{education.certificadoEdu}}</h4> <br>    
+              <h5>{{education.fechaInicioEdu + "- " + education.fechaFinEdu}}</h5> 
               <br>
-                 <img src="{{education.img}}" alt="">
+                 <img class="img-responsive" src="{{education.img}}" alt="img educaciones">
             </li>
             </ul>
   
