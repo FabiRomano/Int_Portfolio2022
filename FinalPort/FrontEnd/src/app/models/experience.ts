@@ -1,4 +1,4 @@
-export interface Esperiencia{
+export interface Experience{
     id:number;
     empresaExp: string;
     fechaInicioExp:string;

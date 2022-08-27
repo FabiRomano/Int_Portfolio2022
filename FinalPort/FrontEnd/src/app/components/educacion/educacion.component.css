@@ -1,5 +1,5 @@
 .row{
-    padding: 10px;
+    padding: 13px;
     color: white;
    
  
@@ -7,6 +7,7 @@
 
 div{
     padding: 20px;
+    background-color:  rgb(46, 37, 170);
  
 
 
@@ -19,6 +20,6 @@ h2, h4{
 
 #title
 {
-    box-shadow: 10px -4px 10px rgba(226, 28, 160, 0.5);
+    box-shadow: 10px -4px 10px rgba(226, 28, 226, 0.5);
 
 }

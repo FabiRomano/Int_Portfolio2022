@@ -1,35 +1,16 @@
-<div class="row">
+<div class="row" *ngFor="let education of educations">
     
     <h2 id="title">Educacion</h2>
    <div class="col-lg-1"></div>
     <div class="col-lg-11">
       <ul>
           <li>
-              <h2>Estudio 1</h2> - 
-              <h4>(Years)</h4> 
+              <h2>{{education.certificadoEdu}}</h2> <br> 
+              <h4>{{education.fechaInicioEdu + "- " + education.fechaFinEdu}}</h4> 
               <br>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo architecto voluptas molestiae nostrum est quasi nisi id quae laborum tenetur repellendus harum molestias, dolores dolorum ullam, laboriosam eligendi perspiciatis earum!<p>
-               </li>
+                 <img src="{{education.img}}" alt="">
+            </li>
             </ul>
-  
-      <ul>
-          <li>
-              <h2>Estudio 2</h2> - 
-              <h4>(Years)</h4>
-              <br>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo architecto voluptas molestiae nostrum est quasi nisi id quae laborum tenetur repellendus harum molestias, dolores dolorum ullam, laboriosam eligendi perspiciatis earum!<p>
-               </li>
-            </ul>
-  
-      <ul>
-          <li>
-              <h2>Estudio 3</h2> - 
-              <h4>(Years)</h4> 
-              <br>
-               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo architecto voluptas molestiae nostrum est quasi nisi id quae laborum tenetur repellendus harum molestias, dolores dolorum ullam, laboriosam eligendi perspiciatis earum!<p>
-               </li>
-            </ul>
-  
   
     </div>  
   </div>

@@ -2,30 +2,31 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Estudios } from '../models/estudios';
+import { Education } from 'src/app/models/education';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class EducationService {
   private apiServerUrl=environment.apiBaseUrl;
  
   constructor(private http: HttpClient) { }
 
-public getEducation():Observable<Estudios[]>{
-    return this.http.get<Estudios[]>(`${this.apiServerUrl}/estudios/all`);
+public getEducation():Observable<Education[]>{
+    return this.http.get<Education[]>(`${this.apiServerUrl}/educacion/all`);
   }
 
-public addEstudios(estudios:Estudios):Observable<Estudios[]>{
-    return this.http.post<Estudios[]>(`${this.apiServerUrl}/estudios/add`, estudios);
+public addEducation(education:Education):Observable<Education[]>{
+    return this.http.post<Education[]>(`${this.apiServerUrl}/educacion/add`, education);
 }
 
-public updateEstudios(estudios:Estudios):Observable<Estudios[]>{
-  return this.http.put<Estudios[]>(`${this.apiServerUrl}/estudios/update`, estudios);
+public updateEducation(education:Education):Observable<Education[]>{
+  return this.http.put<Education[]>(`${this.apiServerUrl}/educacion/update`, education);
 }
 
-public deleteEstudios(estudiosId:number):Observable<void>{
-  return this.http.delete<void>(`${this.apiServerUrl}/estudios/delete/${estudiosId}`);
+public deleteEducation(educationId:number):Observable<void>{
+  return this.http.delete<void>(`${this.apiServerUrl}/educacion/delete/${educationId}`);
 }
 
 }
