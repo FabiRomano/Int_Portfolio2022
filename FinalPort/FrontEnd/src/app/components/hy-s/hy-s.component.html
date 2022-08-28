@@ -1,4 +1,30 @@
-<div class="row">
+<a
+class="btn btn-primary tooltips"
+data-placement="top"
+data-toggle="tooltip"
+data-original-title="Edit"
+><i class="fa fa-pencil"></i>
+</a>
+
+
+
+<div *ngFor="let skill of skills">
+       <h1>hola</h1>
+<ul>
+       <li>
+              <h3>{{skill.fotoSkill}}</h3>
+
+             
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+<!-- <div class="row">
     <h2>Skill</h2>
 
     <br><br>
@@ -115,7 +141,6 @@
                [animation]="true"
                [animationDuration]="600"
         ></circle-progress>
-       </div> 
+       </div>  -->
        
-</div>
-
+<!-- </div>  -->

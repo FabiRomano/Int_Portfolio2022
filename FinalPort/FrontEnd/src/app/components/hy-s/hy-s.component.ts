@@ -1,6 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Skill } from 'src/app/models/Skill';
+import { Skill } from 'src/app/models/skill';
+
 import { SkillService } from 'src/app/servicios/skill.service';
 
 @Component({
@@ -16,8 +17,6 @@ export class HySComponent implements OnInit {
   ngOnInit(): void {
     this.getSkills
   }
-
-  
   public getSkills():void{
     this.skillService.getSkill().subscribe({
       next: (response: Skill[]) =>{

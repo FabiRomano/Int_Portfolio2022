@@ -20,22 +20,22 @@ public class Proyectos implements Serializable{
     private String nombreProyectos;
     private String inicioProyectos;
     private String finProyectos;
-    private String linkProyecto;
     private String descripcionProyectos;
+    private String urlProyectos;
 
     public Proyectos() {
     }
 
-    public Proyectos(long idProyectos, String nombreProyectos, String inicioProyectos, String finProyectos, String linkProyecto, String descripcionProyectos) {
+    public Proyectos(long idProyectos, String nombreProyectos, String inicioProyectos, String finProyectos, String descripcionProyectos, String urlProyectos) {
         this.idProyectos = idProyectos;
         this.nombreProyectos = nombreProyectos;
         this.inicioProyectos = inicioProyectos;
         this.finProyectos = finProyectos;
-        this.linkProyecto = linkProyecto;
         this.descripcionProyectos = descripcionProyectos;
+        this.urlProyectos = urlProyectos;
     }
 
- 
+    
 
     
     

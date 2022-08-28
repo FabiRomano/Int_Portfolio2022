@@ -31,14 +31,15 @@ import { FormsModule } from '@angular/forms';
     HySComponent,
     FooterComponent,
    
-    ],
+   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule
-  ],
+  ], 
   providers: [],
   bootstrap: [AppComponent]
 })

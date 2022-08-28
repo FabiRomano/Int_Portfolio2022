@@ -30,8 +30,8 @@ public class Persona implements Serializable{
      @OneToMany (fetch = FetchType.LAZY, mappedBy = "idExp")
     private List<Experiencia> experienciaList;
      
-      @OneToMany (fetch = FetchType.LAZY, mappedBy = "idHys")
-    private List<Hys> hysList;
+      @OneToMany (fetch = FetchType.LAZY, mappedBy = "idSkills")
+    private List<Skills> skillsList;
       
       @OneToMany (fetch = FetchType.LAZY, mappedBy = "idProyectos")
     private List<Proyectos> proyectosList;
