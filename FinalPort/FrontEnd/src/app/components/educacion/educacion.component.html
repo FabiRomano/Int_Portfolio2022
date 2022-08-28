@@ -1,10 +1,21 @@
 <div class="row" >
+   <h2 id="title">Educacion</h2>
+   <div>
+      <div class="text-center">
+         <button type="button" class="btn btn-success" (click)="onOpenModel ('add')">
+            <a class="nav-link">
+              añadir educacion <span class="sr-only">(current)</span>
     
-    <h2 id="title">Educacion</h2>
+            </a>
+        </button>
+      </div>
+    </div>
+    
    <div class="col-lg-1"></div>
     <div class="col-lg-4" *ngFor="let education of educations">
         <div class="col-text-center">
                  <a
+                    (click)="onOpenModel('edit' , education)"
                     class="btn btn-primary tooltips"
                     data-placement="top"
                     data-toggle="tooltip"
@@ -13,6 +24,7 @@
                   </a>
 
                   <a
+                  (click)="onOpenModel('delete' , education)"
                   class="btn btn-secondary tooltips"
                   data-placement="top"
                   data-toggle="tooltip"

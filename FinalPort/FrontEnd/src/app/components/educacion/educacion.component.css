@@ -27,3 +27,7 @@ h2, h4{
     width: 200px;
    border-radius: 15px;
 }
+
+.nav-link{
+    color: aliceblue;
+}
