@@ -4,7 +4,7 @@
  <div class="col-lg-6" ></div>
 
  <div class="text-center">
-  <button type="button" class="btn btn-success" (click)="onOpenModel ('add')">
+  <button type="button" class="btn btn-success" (click)=" ('add')">
      <a class="nav-link">
        añadir experiencia <span class="sr-only">(current)</span>
 
@@ -13,7 +13,6 @@
 </div>
         <div class="col-lg-5" *ngFor="let experience of experiences">
           <a
-          (click)="onOpenModel('edit' , experience)"
           class="btn btn-primary tooltips"
           data-placement="top"
           data-toggle="tooltip"
@@ -22,7 +21,6 @@
         </a>
 
         <a
-        (click)="onOpenModel('delete' , experience)"
         class="btn btn-secondary tooltips"
         data-placement="top"
         data-toggle="tooltip"

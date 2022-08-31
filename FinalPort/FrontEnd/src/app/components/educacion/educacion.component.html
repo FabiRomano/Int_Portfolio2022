@@ -5,7 +5,7 @@
       <button
         type="button"
         class="btn btn-success"
-        (click)="onOpenModel('add')"
+       
       >
         <a class="nav-link">
           añadir educacion <span class="sr-only">(current)</span>
@@ -18,7 +18,6 @@
   <div class="col-lg-4" *ngFor="let education of educations">
     <div class="col-text-center">
       <a
-        (click)="onOpenModel('edit', education)"
         class="btn btn-primary tooltips"
         data-placement="top"
         data-toggle="tooltip"
@@ -27,7 +26,6 @@
       </a>
 
       <a
-        (click)="onOpenModel('delete', education)"
         class="btn btn-secondary tooltips"
         data-placement="top"
         data-toggle="tooltip"
@@ -53,107 +51,4 @@
   </div>
 </div>
 
-<!--Modal Añadir educations  -->
 
-<div
-  class="modal fade"
-  id="addEducationModal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelldby="addEducationModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-educacion">
-        <h5 class="modal-title" id="myModalLabel">Añadir Educacion</h5>
-
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-        <span aria-hidden="true"> &times;</span>
-      </button>
-      </div>
-      <div class="modal-body">
-        <form #addForm="ngForm" (ngSubmit)="onAddEducation(addForm)">
-          <div class="form-group">
-             <label for="establecimientoEdu">Establecimiento</label>
-             <input type="text"
-             ngModel
-             name="establecimientoEdu"
-             class="form-control"
-             id="establecimientoEdu"
-             placeholder="establecimiento"
-             required
-             > 
-          </div>
-          <div class="form-group">
-            <label for="fechaInicioEdu">Fecha</label>
-            <input type="text"
-            ngModel
-            name="fechaInicioEdu"
-            class="form-control"
-            id="fechaInicioEdu"
-            placeholder="Fecha"
-            required
-            > 
-         </div>
-         <div class="form-group">
-          <label for="fechaFinEdu">Fecha Fin</label>
-          <input type="text"
-          ngModel
-          name="fechaFinEdu"
-          class="form-control"
-          id="fechaFinEdu"
-          placeholder="Fecha Fin"
-          required
-          > 
-       </div>
-       <div class="form-group">
-        <label for="certificadoEdu">Certificado</label>
-        <input type="text"
-        ngModel
-        name="certificadoEdu"
-        class="form-control"
-        id="certificadoEdu"
-        placeholder="Certificado"
-        required
-        > 
-     </div>
-     <div class="form-group">
-      <label for="img">Imagen</label>
-      <input type="text"
-      ngModel
-      name="img"
-      class="form-control"
-      id="img"
-      placeholder="Imagen"
-      required
-      > 
-   </div>
-      <div class="modal-footer">
-        <button
-         type="button"
-        id="add-education-form"
-        class="btn btn-success"
-        data-dismiss="modal"
-        >
-        cerrar
-      </button>
-      <button 
-      [disabled]="addForm.invalid"
-      type="submit"
-      class="btn btn-primary"
-      >
-      Añadir cambios
-      </button>
-      </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-</div>

@@ -11,7 +11,7 @@ import { ExperienceService } from 'src/app/servicios/experience.service';
 })
 export class ExperienciaComponent implements OnInit {
 
-  public experiences :Experience []=[];
+  public experiences :Experience[] =[];
   public editExperience:Experience| undefined;
   public deleteExperience:Experience | undefined;
 
@@ -32,54 +32,6 @@ export class ExperienciaComponent implements OnInit {
     }
     });
   }
-  public onOpenModel(mode:string, experience?:Experience):void{
-    const container=document.getElementById('main-container');
-    const button=document.createElement('button');
-    button.style.display='none';
-    button.setAttribute('data-toggle', 'modal')
-    if(mode==='add'){
-      button.setAttribute('data-target','addExperienceModal');
-    }
-    else if(mode==='delete'){
-      this.deleteExperience=experience;
-      button.setAttribute('data-target','#deleteExperienceModal');
-    }
-    else if(mode==='edit'){
-      this.editExperience=experience;
-      button.setAttribute('data-target','#editExperienceModal');
-    }
-
-    container?.appendChild(button);
-    button.click;
-  }
-
-  public onAddExperience(addForm:NgForm){
-    document.getElementById('add-experience-form')?.click();
-    this.experienceService.addExperiece(addForm.value).subscribe({
-     next: (response: Experience[]) =>{
-       console.log(response);
-       this.experiences=response;
-       addForm.resetForm();
-     },
-     error: (error:HttpErrorResponse)=>{
-       alert(error.message);
-       addForm.resetForm();
-     }
- })
- }
- public onpdateExperience(experience:Experience){
-   this.editExperience=experience
-   document.getElementById('add-experience-form')?.click();
-   this.experienceService.updateExperience(experience).subscribe({
-    next: (response: Experience[]) =>{
-      console.log(response);
-      this.getExperiences ();
-    },
-    error: (error:HttpErrorResponse)=>{
-     alert(error.message);
-   }
-    })
- }
  
  public onDeleteExperience(idExp:number):void{
   

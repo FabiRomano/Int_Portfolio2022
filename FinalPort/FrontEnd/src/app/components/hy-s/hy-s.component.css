@@ -1,5 +1,77 @@
-/* .row{
-    padding: 10px;
-    color: white;
+ .container{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: 20px;
+    padding: 2%;
+    align-content: center;
+    background-color:  rgb(80, 53, 78);
+    border-radius: 20px;
+   
+
+} 
+
+ 
+.padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+   
+
+}
+
+.text{
+    color:rgb(59, 211, 231);
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(80, 53, 78);
+} 
+
+.responsive{
+    background-color: rgb(80, 53, 78);
+   
+
+}
+
+.responsive img{
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 53, 78);
+
+   
+
     
-} */
+}
+   
+.progress-bar
+{
+    height: 30px;
+    text-align: center;
+     
+} 
+.fondoProgress{
+    height: 30px;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+h2{
+   
+    color:white;
+     margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px; 
+    /* text-align: center;
+    background-color: aqua; */
+    border-radius: 20px;
+  
+ } 
+
+
+
+
+

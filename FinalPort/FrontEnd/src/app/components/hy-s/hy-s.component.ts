@@ -1,8 +1,8 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Skill } from 'src/app/models/skill';
+import { Skills } from 'src/app/models/skills';
+import { SkillsService } from 'src/app/servicios/skills.service';
 
-import { SkillService } from 'src/app/servicios/skill.service';
 
 @Component({
   selector: 'app-hy-s',
@@ -10,22 +10,22 @@ import { SkillService } from 'src/app/servicios/skill.service';
   styleUrls: ['./hy-s.component.css']
 })
 export class HySComponent implements OnInit {
-  public skills: Skill []=[];
+  public skills : Skills[] =[];
 
-  constructor(private skillService: SkillService) { }
+  constructor(private skillsService: SkillsService) { }
 
   ngOnInit(): void {
-    this.getSkills
+   this.getSkills()
   }
   public getSkills():void{
-    this.skillService.getSkill().subscribe({
-      next: (response: Skill[]) =>{
-        this.skills=response;
-      },
-      error:(error: HttpErrorResponse)=>{
-        alert (error.message);
-      }
-            
-    })
+    this.skillsService.getSkills().subscribe({
+      next: (response: Skills[]) => {
+      this.skills=response;
+    },
+    error:(error: HttpErrorResponse)=>{
+      alert (error.message);
+    }
+    });
   }
-}
+ 
+  }
