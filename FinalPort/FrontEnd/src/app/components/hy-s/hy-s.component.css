@@ -5,8 +5,10 @@
     margin: 20px;
     padding: 2%;
     align-content: center;
-    background-color:  rgb(80, 53, 78);
-    border-radius: 20px;
+    background-color:  rgb(182, 92, 176);
+    border-radius: 50px;
+    box-shadow: 20px -15px 20px rgb(228, 36, 215);
+    
    
 
 } 
@@ -17,20 +19,21 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+
    
 
 }
 
 .text{
-    color:rgb(59, 211, 231);
+    color:rgb(59, 231, 159);
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
-    background-color: rgb(80, 53, 78);
+    background-color: rgb(182, 92, 176);
 } 
 
 .responsive{
-    background-color: rgb(80, 53, 78);
+    background-color: rgb(182, 92, 176);
    
 
 }
@@ -39,7 +42,7 @@
     align-items: center;
     width: 100px;
     height: 100px;
-    background-color: rgb(80, 53, 78);
+    background-color: rgb(182, 92, 176);
 
    
 

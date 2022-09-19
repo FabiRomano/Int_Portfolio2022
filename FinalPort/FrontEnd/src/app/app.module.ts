@@ -15,6 +15,8 @@ import { HySComponent } from './components/hy-s/hy-s.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -30,6 +32,8 @@ import { FormsModule } from '@angular/forms';
     ProyectoComponent,
     HySComponent,
     FooterComponent,
+    HomeComponent,
+    LoginComponent,
    
    ],
 
