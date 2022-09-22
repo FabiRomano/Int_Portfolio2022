@@ -3,18 +3,16 @@ package com.portfolio.FabiolaRomano.security;
 
 public class AuthResponse {
     
-     private String email;
-
-    private String accessToken;
+    
+    private String email;
+    private String accesToken;
 
     public AuthResponse() {
     }
 
-    public AuthResponse(String email, String accessToken) {
+    public AuthResponse(String email, String accesToken) {
         this.email = email;
-        this.accessToken = accessToken;
-
-
+        this.accesToken = accesToken;
     }
 
     public String getEmail() {
@@ -25,12 +23,12 @@ public class AuthResponse {
         this.email = email;
     }
 
-    public String getAccessToken() {
-        return accessToken;
+    public String getAccesToken() {
+        return accesToken;
     }
 
-    public void setAccessToken(String accessToken) {
-        this.accessToken = accessToken;
+    public void setAccesToken(String accesToken) {
+        this.accesToken = accesToken;
     }
     
 }

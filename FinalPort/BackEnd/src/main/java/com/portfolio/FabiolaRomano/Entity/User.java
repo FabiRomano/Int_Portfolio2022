@@ -15,29 +15,27 @@ import org.springframework.security.core.userdetails.UserDetails;
 public class User implements UserDetails{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer Id;
-    
+    private Integer id;
     @Column(nullable = false, unique = true, length = 50)
     private String email;
-    
-    @Column (nullable = false)
+    @Column(nullable = false, length = 64)
     private String password;
 
     public User() {
+
     }
 
-    public User(Integer Id, String email, String password) {
-        this.Id = Id;
+    public User(String email, String password) {
         this.email = email;
         this.password = password;
     }
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(Integer Id) {
-        this.Id = Id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getEmail() {
@@ -47,12 +45,11 @@ public class User implements UserDetails{
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
-   public void setPassword(String password){
-       this.password = password;
-   }
-   
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;

@@ -20,49 +20,43 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class AplicationSecurityConfig extends WebSecurityConfigurerAdapter{
-    
-     @Autowired
+    @Autowired
     private UserRepo userRepository;
     @Autowired
     private JwtTokenFilter jwtTokenFilter;
-
-
-   @Bean
-    PasswordEncoder passwordEncoder() {
-       return new BCryptPasswordEncoder();
-   }
-
-
+    
+    @Bean
+    PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
+    }
+    
     @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-       auth.userDetailsService(username -> userRepository.findByEmail(username)
-                  .orElseThrow(() -> new UsernameNotFoundException("No user"))
-      
-       );
-   }
-
-
-   @Override
-  @Bean
-   public AuthenticationManager authenticationManagerBean() throws Exception {
+    protected void configure (AuthenticationManagerBuilder auth) throws Exception{
+        auth.userDetailsService(username -> userRepository.findByEmail(username)
+        .orElseThrow(() -> new UsernameNotFoundException("No user"))
+        );
+    }
+    
+    @Override
+    @Bean
+    public AuthenticationManager authenticationManagerBean() throws Exception{
         return super.authenticationManagerBean();
-   }
-
+    }
+    
     @Override
-   protected AuthenticationManager authenticationManager() throws Exception {
-       return super.authenticationManager();
-   }
-
-   @Override
-    protected void configure(HttpSecurity http) throws Exception {
+    protected AuthenticationManager authenticationManager() throws Exception{
+        return super.authenticationManager();
+    }
+    
+    @Override
+    protected void configure(HttpSecurity http) throws Exception{
         http.csrf().disable()
-                .authorizeRequests().antMatchers("/api/**")
+                .authorizeRequests().antMatchers("**")
                 .permitAll()
                 .anyRequest()
                 .authenticated()
                 .and()
                 .httpBasic();
-
-        http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(jwtTokenFilter,UsernamePasswordAuthenticationFilter.class);
     }
 }
