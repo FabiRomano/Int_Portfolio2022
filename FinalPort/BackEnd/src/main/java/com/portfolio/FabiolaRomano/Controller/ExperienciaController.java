@@ -25,7 +25,7 @@ public class ExperienciaController {
         this.experienciaService = experienciaService;
     }
     
-    @GetMapping("/all")
+    @GetMapping("/todo")
     public ResponseEntity <List<Experiencia>> obtenerExperiencia(){
         
         List<Experiencia> experiencia = experienciaService.traerExperiencia();
@@ -34,7 +34,7 @@ public class ExperienciaController {
        
      }
     
-    @PutMapping("/update")
+    @PutMapping("/editar")
     
     public ResponseEntity<Experiencia> editarExperiencia(@RequestBody Experiencia experiencia){
     
@@ -43,19 +43,23 @@ public class ExperienciaController {
        return new ResponseEntity<>(updateExperiencia,HttpStatus.OK);
 }
  
-    @PutMapping("/add")
+    @PutMapping("/agregar")
     public ResponseEntity<Experiencia> crearExperiencia(@RequestBody  Experiencia experiencia){
         
        Experiencia nuevoExperiencia = experienciaService.addExperiencia(experiencia);
           return new ResponseEntity<>(nuevoExperiencia,HttpStatus.CREATED);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("borrar/{id}")
     public ResponseEntity<?> borrarExperiencia(@PathVariable ("id") Long id){
         experienciaService.eliminarExperiencia(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
     
-    
+     @GetMapping("/buscar/{id}")
+    public ResponseEntity<Experiencia> buscarExperiencia(@PathVariable("id") Long id){
+        Experiencia experienciaBuscada=experienciaService.buscarExperiencia(id);
+        return new ResponseEntity<>(experienciaBuscada,HttpStatus.OK);
+    }
     
 }

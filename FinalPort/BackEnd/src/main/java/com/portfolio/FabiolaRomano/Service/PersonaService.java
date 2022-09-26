@@ -46,6 +46,10 @@ public class PersonaService {
     
         return personaRepo.findById(id).orElseThrow(() ->new UserNotFoundException("Usuario no encontrado"));
     }
-
+    
+     
+    public Persona crearPersona(Persona persona) {
+        return personaRepo.save(persona);
+    }
  
 }

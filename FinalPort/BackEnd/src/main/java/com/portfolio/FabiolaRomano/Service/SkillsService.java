@@ -1,6 +1,7 @@
 package com.portfolio.FabiolaRomano.Service;
 
 import com.portfolio.FabiolaRomano.Entity.Skills;
+import com.portfolio.FabiolaRomano.Exception.UserNotFoundException;
 import com.portfolio.FabiolaRomano.Repository.SkillsRepo;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,4 +43,8 @@ public class SkillsService {
     
         skillsRepo.deleteById(id);
     } 
+    
+      public Skills buscarSkills(Long id) {
+        return skillsRepo.findById(id).orElseThrow(()->new UserNotFoundException("skills no encontrado"));
+    }
 }

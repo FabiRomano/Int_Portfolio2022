@@ -25,7 +25,7 @@ public class SkillsController {
         this.skillsService = skillsService;
     }
     
-    @GetMapping("/all")
+    @GetMapping("/todo")
     public ResponseEntity <List<Skills>> obtenerSkills(){
         
         List<Skills> skills = skillsService.traerSkills();
@@ -34,7 +34,7 @@ public class SkillsController {
        
      }
     
-    @PutMapping("/update")
+    @PutMapping("/editar")
     
     public ResponseEntity<Skills> editarSkills(@RequestBody Skills skills){
     
@@ -43,17 +43,23 @@ public class SkillsController {
        return new ResponseEntity<>(updateSkills,HttpStatus.OK);
 }
  
-    @PutMapping("/add")
+    @PutMapping("/agregar")
     public ResponseEntity<Skills> crearSkills(@RequestBody Skills skills){
         
         Skills nuevoSkills = skillsService.addSkills(skills);
           return new ResponseEntity<>(nuevoSkills,HttpStatus.CREATED);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("eliminar/{id}")
     public ResponseEntity<?> borrarSkills(@PathVariable ("id") Long id){
         skillsService.eliminarSkills(id);
         return new ResponseEntity<>(HttpStatus.OK);
+    }
+    
+     @GetMapping("/buscar/{id}")
+    public ResponseEntity<Skills> buscarSkills(@PathVariable("id") Long id){
+        Skills skillsBuscada=skillsService.buscarSkills(id);
+        return new ResponseEntity<>(skillsBuscada,HttpStatus.OK);
     }
     
     
