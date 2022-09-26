@@ -9,7 +9,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import lombok.Getter;
+import lombok.Setter;
 
+
+@Getter @Setter
  @Entity
 public class Persona implements Serializable{
     
@@ -22,6 +26,11 @@ public class Persona implements Serializable{
     private String titulo;
     private String descripcion;
     private String fotoPerfil;
+    private String telefono;
+    private String correo;
+    private String pass;
+    private String fechaNac;
+    
    
     
     
@@ -40,62 +49,24 @@ public class Persona implements Serializable{
     public Persona() {
     }
 
-    public Persona(long id, String nombre, String apellido, String titulo, String descripcion, String fotoPerfil) {
+    public Persona(long id, String nombre, String apellido, String titulo, String descripcion, String fotoPerfil, String telefono, String correo, String pass, String fechaNac, List<Educacion> educacionList, List<Experiencia> experienciaList, List<Skills> skillsList, List<Proyectos> proyectosList) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.fotoPerfil = fotoPerfil;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.pass = pass;
+        this.fechaNac = fechaNac;
+        this.educacionList = educacionList;
+        this.experienciaList = experienciaList;
+        this.skillsList = skillsList;
+        this.proyectosList = proyectosList;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public String getFotoPerfil() {
-        return fotoPerfil;
-    }
-
-    public void setFotoPerfil(String fotoPerfil) {
-        this.fotoPerfil = fotoPerfil;
-    }
+   
 
    
    
