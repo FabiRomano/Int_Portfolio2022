@@ -29,4 +29,9 @@ public deleteEducation(educationId:number):Observable<void>{
   return this.http.delete<void>(`${this.apiServerUrl}/educacion/eliminar/${educationId}`);
 }
 
+public buscarEducacion(idEdu: number):Observable<Education>{
+  return this.http.get<Education>(`${this.apiServerUrl}/educacion/buscar/${idEdu}`);
+}
+
+
 }

@@ -29,4 +29,8 @@ export class SkillsService {
   return this.http.delete<void>(`${this.apiServerUrl}/skills/eliminar/${skillsId}`);
   }
 
+  public buscarSkills(idSkills: number):Observable<Skills>{
+    return this.http.get<Skills>(`${this.apiServerUrl}/skills/buscar/${idSkills}`);
+  }
+
 }
