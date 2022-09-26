@@ -1,6 +1,7 @@
 package com.portfolio.FabiolaRomano.Service;
 
 import com.portfolio.FabiolaRomano.Entity.Experiencia;
+import com.portfolio.FabiolaRomano.Exception.UserNotFoundException;
 import com.portfolio.FabiolaRomano.Repository.ExperienciaRepo;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,5 +42,9 @@ public class ExperienciaService {
     
         experienciaRepo.deleteById(id);
     } 
+    
+    public Experiencia buscarExperiencia(Long id) {
+        return experienciaRepo.findById(id).orElseThrow(()->new UserNotFoundException("experiencia no encontrada"));
+    }
     
 }

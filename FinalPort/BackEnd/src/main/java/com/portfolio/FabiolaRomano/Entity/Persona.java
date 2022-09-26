@@ -22,6 +22,7 @@ public class Persona implements Serializable{
     private String titulo;
     private String descripcion;
     private String fotoPerfil;
+   
     
     
     @OneToMany (fetch = FetchType.LAZY, mappedBy = "idEdu")

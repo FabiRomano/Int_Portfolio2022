@@ -5,8 +5,10 @@ import com.portfolio.FabiolaRomano.Service.PersonaService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,7 +34,7 @@ public class PersonaController {
        
      }
     
-    @PutMapping("/update")
+    @PutMapping("/editar")
     
     public ResponseEntity<Persona> editarPersona(@RequestBody Persona persona){
     
@@ -40,5 +42,22 @@ public class PersonaController {
        
        return new ResponseEntity<>(updatePersona,HttpStatus.OK);
 }
+    
+     @PostMapping("/crear")
+    public ResponseEntity<Persona> crearPersona(@RequestBody Persona persona){
+        Persona personaCreada= personaService.crearPersona(persona);
+        return new ResponseEntity<>(personaCreada,HttpStatus.CREATED);
+    }
+    
+    @DeleteMapping("/eliminar/{id}")
+    public ResponseEntity<?> eliminarPersona(@PathVariable Long id){
+        personaService.eliminarPersona(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    } 
+    @GetMapping("/buscar/{id}")
+    public ResponseEntity<Persona> buscarPersona(@PathVariable("id") Long id){
+        Persona personaBuscada=personaService.buscarPersonaPorId(id);
+        return new ResponseEntity<>(personaBuscada,HttpStatus.OK);
+    }
     
     }

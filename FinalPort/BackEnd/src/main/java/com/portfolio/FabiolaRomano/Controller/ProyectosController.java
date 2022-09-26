@@ -25,7 +25,7 @@ public class ProyectosController {
         this.proyectosService = proyectosService;
     }
     
-    @GetMapping("/all")
+    @GetMapping("/todo")
     public ResponseEntity <List<Proyectos>> obtenerProyectos(){
         
         List<Proyectos> proyectos = proyectosService.traerProyectos();
@@ -34,7 +34,7 @@ public class ProyectosController {
        
      }
     
-    @PutMapping("/update")
+    @PutMapping("/editar")
     
     public ResponseEntity<Proyectos> editarProyectos(@RequestBody Proyectos proyectos){
     
@@ -43,17 +43,19 @@ public class ProyectosController {
        return new ResponseEntity<>(updateProyectos,HttpStatus.OK);
 }
  
-    @PutMapping("/add")
+    @PutMapping("/agregar")
     public ResponseEntity<Proyectos> crearProyectos(@RequestBody Proyectos proyectos){
         
         Proyectos nuevoProyectos = proyectosService.addProyectos(proyectos);
           return new ResponseEntity<>(nuevoProyectos,HttpStatus.CREATED);
     }
     
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("eliminar/{id}")
     public ResponseEntity<?> borrarProyectos(@PathVariable ("id") Long id){
         proyectosService.eliminarProyectos(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+    
+    
     
 }

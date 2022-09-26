@@ -1,6 +1,7 @@
 package com.portfolio.FabiolaRomano.Service;
 
 import com.portfolio.FabiolaRomano.Entity.Educacion;
+import com.portfolio.FabiolaRomano.Exception.UserNotFoundException;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,4 +43,8 @@ public class EducacionService {
     
         educacionRepo.deleteById(id);
     } 
+    
+    public Educacion buscarEducacion(Long id) {
+        return educacionRepo.findById(id).orElseThrow(()->new UserNotFoundException("educacion no encontrada"));
+    }
 }
