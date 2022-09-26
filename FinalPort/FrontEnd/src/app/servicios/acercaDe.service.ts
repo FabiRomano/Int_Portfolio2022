@@ -18,7 +18,7 @@ export class AcercaDeService {
 }
 
 public updatePersona(persona:Persona):Observable<Persona>{
-  return this.http.put<Persona>(`${this.apiServerUrl}/persona/update`, persona);
+  return this.http.put<Persona>(`${this.apiServerUrl}/persona/editar`, persona);
 }
 
 }
