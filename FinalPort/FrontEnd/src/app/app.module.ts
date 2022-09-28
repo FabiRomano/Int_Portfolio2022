@@ -19,6 +19,8 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { EditarEducacionComponent } from './components/educacion/editar-educacion/editar-educacion.component';
 import { NuevaEducacionComponent } from './components/educacion/nueva-educacion/nueva-educacion.component';
+import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia/nueva-experiencia.component';
+import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia/editar-experiencia.component';
 
 
 
@@ -38,6 +40,8 @@ import { NuevaEducacionComponent } from './components/educacion/nueva-educacion/
     LoginComponent,
     EditarEducacionComponent,
     NuevaEducacionComponent,
+    NuevaExperienciaComponent,
+    EditarExperienciaComponent,
    
    ],
 
