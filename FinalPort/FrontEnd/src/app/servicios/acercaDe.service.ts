@@ -18,7 +18,11 @@ export class AcercaDeService {
 }
 
 public updatePersona(persona:Persona):Observable<Persona>{
-  return this.http.put<Persona>(`${this.apiServerUrl}/persona/update`, persona);
+  return this.http.put<Persona>(`${this.apiServerUrl}/persona/editar`, persona);
+}
+
+public buscarPersona(id: number):Observable<Persona>{
+  return this.http.get<Persona>(`${this.apiServerUrl}/persona/buscar/${id}`);
 }
 
 }

@@ -1,54 +1,34 @@
 <div class="row">
-  <h2 id="title">Educacion</h2>
-  <div>
-    <!-- <div class="text-center">
-      <button
-        type="button"
-        class="btn btn-success"
-       
-      >
-        <a class="nav-link">
-          añadir educacion <span class="sr-only">(current)</span>
-        </a>
+  <h1>Educacion</h1>
+  <div class="col-lg-2">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaEducacion" >
+          Agregar Educacion
       </button>
-    </div> -->
   </div>
 
-  <div class="col-lg-1"></div>
-  <div class="col-lg-4" *ngFor="let education of educations">
-    <div class="col-text-center">
-      <!-- <a
-        class="btn btn-primary tooltips"
-        data-placement="top"
-        data-toggle="tooltip"
-        data-original-title="Edit"
-        ><i class="fa fa-pencil"></i>
-      </a>
-
-      <a
-        class="btn btn-secondary tooltips"
-        data-placement="top"
-        data-toggle="tooltip"
-        data-original-title="Delete"
-        ><i class="fa fa-times"></i>
-      </a> -->
-      <br>
-    </div>
-
-    <ul>
-      <li>
-        <h4>{{ education.certificadoEdu }}</h4>
-        <br />
-        <h5>{{ education.fechaInicioEdu + "- " + education.fechaFinEdu }}</h5>
-        <br />
-        <img
-          class="img-responsive"
-          src="{{ education.img }}"
-          alt="img educaciones"
-        />
-      </li>
-    </ul>
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+      <table class="table">
+          <tbody>
+              <tr *ngFor="let education of educations">
+                  <td>
+                      <h5>{{ education.establecimientoEdu}}</h5>
+                  </td>
+                  <td>{{ education.certificadoEdu}}</td>
+                  <!-- <td *ngIf="isLogged"> -->
+                      <button class="btn btn-light" routerLink="/editarEducacion/{{education.idEdu}}">
+                          <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                  <!-- </td>
+                  <td *ngIf="isLogged"> -->
+                      <button class="btn btn-danger" (click)="onEliminarEducation (education.idEdu)">
+                          <i class="bi bi-trash-fill"></i> BORRAR</button>
+                  <!-- </td> -->
+              </tr>
+          </tbody>
+      </table>
   </div>
+
 </div>
+
 
 

@@ -11,7 +11,7 @@ export class Persona{
    fechaNac: string;
 
 
-   constructor(id: string, nombre: string, apellido: string, titulo: string, fotoPerfil: string,  descripcion: string, pass: string, telefono: string, correo: string, fechaNac: string){
+   constructor( nombre: string, apellido: string, titulo: string, fotoPerfil: string,  descripcion: string, pass: string, telefono: string, correo: string, fechaNac: string){
     
       this.nombre = nombre;
       this.apellido = apellido;
