@@ -1,5 +1,5 @@
 export class Education{
-    idEdu?:number;
+    idEdu?:any;
     establecimientoEdu: string;
     fechaInicioEdu:string;
     fechaFinEdu: string;

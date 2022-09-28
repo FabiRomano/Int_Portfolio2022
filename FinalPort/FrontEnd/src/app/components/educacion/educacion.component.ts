@@ -1,8 +1,10 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Education } from 'src/app/models/education';
 import { EducationService } from 'src/app/servicios/education.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-educacion',
@@ -11,38 +13,53 @@ import { EducationService } from 'src/app/servicios/education.service';
 })
 export class EducacionComponent implements OnInit {
 
+  isLogged = false;
+
   public educations:Education []=[];
-  public editEducation:Education | undefined;
-  public deleteEducation:Education | undefined;
+  public editarEducation:Education | undefined;
+  public eliminarEducation:Education | undefined;
 
-  constructor(private educationService:EducationService) { }
-
-  ngOnInit(): void {
-    this.getEducations();
-  }
-
-  public getEducations():void{
-    this.educationService.getEducation().subscribe({
-      next: (response: Education[]) =>{
-        this.educations=response;
-      },
-      error:(error: HttpErrorResponse)=>{
-        alert (error.message);
+   constructor(
+    private educationService:EducationService, 
+    private router: Router,
+    private tokenService: TokenService
+    ) { }
+     
+      ngOnInit(): void {
+      this.verEducations();
+      if (this.tokenService.getToken()) {
+        this.isLogged = true;
+      } else {
+        this.isLogged = false;
       }
-            
-    })
-  }
+    }
+    login() {
+      this.router.navigate(['/login']);
+    }
+    onLogOut(): void {
+      this.tokenService.logOut();
+      window.location.reload();
+    }
+  
+    public verEducations(): void {
+      this.educationService.verEducation().subscribe((data) => {
+        this.educations = data;
+      });
+    }
+  
+    public onEliminarEducation(idEdu: number): void {
+      this.educationService.eliminarEducation (idEdu).subscribe({
+        next: (response: void) => {
+          alert('Se elimino correctamente');
+          this.router.navigate(['']);
 
-public onDeleteEducation(idEdu:number):void{
- 
-  this.educationService.deleteEducation(idEdu).subscribe({
-   next: (response: void) =>{
-     console.log(response);
-     this.getEducations ();
-   },
-   error: (error:HttpErrorResponse)=>{
-    alert(error.message);
-  }
-   })
-  }
+         // console.log(JSON.stringify(idEdu));
+        },
+        
+        error: (error: HttpErrorResponse) => {
+          alert('No se pudo eliminar');
+          this.router.navigate(['']);
+        },
+      });
+    }
 }

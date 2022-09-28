@@ -10,7 +10,7 @@ import com.portfolio.FabiolaRomano.Repository.EducacionRepo;
 
 @Service
 @Transactional
-public class EducacionService {
+public class EducacionService implements IEducacionService{
     
     private final EducacionRepo educacionRepo;
     
@@ -22,29 +22,34 @@ public class EducacionService {
     }
     
     
-    public Educacion addEducacion(Educacion educacion){
+    @Override
+    public Educacion agregarEducacion(Educacion educacion){
     
         return educacionRepo.save(educacion);
     }
     
-    public List<Educacion> traerEducacion(){
+    @Override
+    public List<Educacion> verEducacion(){
     
         return educacionRepo.findAll();
     }
     
     
+    @Override
     public Educacion editarEducacion(Educacion educacion){
     
         return educacionRepo.save(educacion);
      
     }
+     
     
-    public void eliminarEducacion(long id){
-    
-        educacionRepo.deleteById(id);
-    } 
-    
+    @Override
     public Educacion buscarEducacion(Long id) {
-        return educacionRepo.findById(id).orElseThrow(()->new UserNotFoundException("educacion no encontrada"));
+       return educacionRepo.findById(id).orElseThrow(()->new UserNotFoundException("educacion no encontrada"));
+    }
+
+    @Override
+    public void eliminarEducacion(Long id) {
+      educacionRepo.deleteById(id);
     }
 }

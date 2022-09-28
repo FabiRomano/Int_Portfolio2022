@@ -26,9 +26,9 @@ public class EducacionController {
     }
     
     @GetMapping("/todo")
-    public ResponseEntity <List<Educacion>> obtenerEducacion(){
+    public ResponseEntity <List<Educacion>> verEducacion(){
         
-        List<Educacion> educacion = educacionService.traerEducacion();
+        List<Educacion> educacion = educacionService.verEducacion();
         
         return new ResponseEntity<>(educacion, HttpStatus.OK);
        
@@ -42,16 +42,16 @@ public class EducacionController {
        
        return new ResponseEntity<>(updateEducacion,HttpStatus.OK);
 }
- 
+   @CrossOrigin(origins = "http://localhost:4200")
     @PutMapping("/agregar")
     public ResponseEntity<Educacion> crearEducacion(@RequestBody Educacion educacion){
         
-        Educacion nuevaEducacion = educacionService.addEducacion(educacion);
+        Educacion nuevaEducacion = educacionService.agregarEducacion(educacion);
           return new ResponseEntity<>(nuevaEducacion,HttpStatus.CREATED);
     }
     
-    @DeleteMapping("/borrar/{id}")
-    public ResponseEntity<?> borrarEducacion(@PathVariable ("id") Long id){
+    @DeleteMapping("/eliminar/{id}")
+    public ResponseEntity<?> eliminarEducacion(@PathVariable ("id") Long id){
        educacionService.eliminarEducacion(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

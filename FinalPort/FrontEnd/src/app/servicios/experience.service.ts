@@ -30,7 +30,7 @@ export class ExperienceService {
     return this.http.delete<void>(`${this.apiServerUrl}/experiencia/eliminar/${experienceId}`);
     }
 
-    public buscarExperiencia(idExp: number):Observable<Experience>{
+    public buscarExperience(idExp: number):Observable<Experience>{
       return this.http.get<Experience>(`${this.apiServerUrl}/experiencia/buscar/${idExp}`);
     }
 

@@ -17,6 +17,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditarEducacionComponent } from './components/educacion/editar-educacion/editar-educacion.component';
+import { NuevaEducacionComponent } from './components/educacion/nueva-educacion/nueva-educacion.component';
 
 
 
@@ -34,6 +36,8 @@ import { LoginComponent } from './components/login/login.component';
     FooterComponent,
     HomeComponent,
     LoginComponent,
+    EditarEducacionComponent,
+    NuevaEducacionComponent,
    
    ],
 
