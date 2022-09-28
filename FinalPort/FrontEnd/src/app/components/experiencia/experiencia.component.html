@@ -1,40 +1,31 @@
-<div class="row" >
-    <h2>Experiencia Laboral</h2>
+<div class="row">
+  <h1>Experiencia laboral</h1>
+  <div class="col-lg-2">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaexperiencia" >
+          Nueva Experiencia
+      </button>
+  </div>
 
- <div class="col-lg-6" ></div>
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+      <table class="table">
+          <tbody>
+              <tr *ngFor="let experience of experiences">
+                  <td>
+                      <h3>{{experience.empresaExp}}</h3>
+                  </td>
+                  <td>{{experience.descripcionExp}}</td>
+                  <td >
+                      <button class="btn btn-light" routerLink="/editarexperiencia/{{experience.id}}">
+                          <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                  </td>
+                  <td >
+                      <button class="btn btn-danger" (click)="(experience.id)">
+                          <i class="bi bi-trash-fill"></i> BORRAR</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
 
- <div class="text-center">
-  <button type="button" class="btn btn-success" (click)=" ('add')">
-     <a class="nav-link">
-       añadir experiencia <span class="sr-only">(current)</span>
-
-     </a>
- </button>
 </div>
-        <div class="col-lg-5" *ngFor="let experience of experiences">
-          <a
-          class="btn btn-primary tooltips"
-          data-placement="top"
-          data-toggle="tooltip"
-          data-original-title="Edit"
-          ><i class="fa fa-pencil"></i>
-        </a>
-
-        <a
-        class="btn btn-secondary tooltips"
-        data-placement="top"
-        data-toggle="tooltip"
-        data-original-title="Delete"
-        ><i class="fa fa-times"></i>
-      </a>
-          <ul>
-              <li>
-                  <h3>{{experience.empresaExp}}</h3> 
-                  <h4>{{experience.fechaInicioExp + " -" + experience.fechaFinExp}}</h4> 
-                  <br>
-                  <p>{{experience.descripcionExp}}<p>
-                  </li>
-                  </ul>
-        </div>  
- 
-  

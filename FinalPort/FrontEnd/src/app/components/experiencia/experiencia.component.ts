@@ -1,8 +1,10 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Route, Router } from '@angular/router';
 import { Experience } from 'src/app/models/experience';
 import { ExperienceService } from 'src/app/servicios/experience.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -10,40 +12,51 @@ import { ExperienceService } from 'src/app/servicios/experience.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
+  isLogged = false;
 
   public experiences :Experience[] =[];
-  public editExperience:Experience| undefined;
-  public deleteExperience:Experience | undefined;
+  public editarExperience:Experience| undefined;
+  public eliminarExperience:Experience | undefined;
+ 
 
 
-  constructor(private experienceService : ExperienceService) { }
+  constructor(private experienceService : ExperienceService,
+              private router : Router,
+              private tokenService : TokenService ) { }
 
   ngOnInit(): void {
-    this.getExperiences();
+    this.verExperience();
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    }else{
+      this.isLogged=false;
+    }
+
   }
 
-  public getExperiences():void{
-    this.experienceService.getExperience().subscribe({
-      next: (response: Experience[]) => {
-      this.experiences=response;
-    },
-    error:(error: HttpErrorResponse)=>{
-      alert (error.message);
-    }
-    });
+  public verExperience(): void {
+    this.experienceService.verExperience().subscribe(data=>{this.experiences=data;})
   }
- 
- public onDeleteExperience(idExp:number):void{
   
-   this.experienceService.deleteExperience(idExp).subscribe({
-    next: (response: void) =>{
-      console.log(response);
-      this.getExperiences ();
-    },
-    error: (error:HttpErrorResponse)=>{
-     alert(error.message);
-   }
+  public onEliminarExperiencia(idExp:number):void{
+    this.experienceService.eliminarExperience(idExp).subscribe({
+      next:(response:void)=>{
+        alert("Se elimino correctamente el elemento");
+        this.router.navigate(['']);
+               
+      },
+      error:(error:HttpErrorResponse)=>{
+      alert('No se pudo eliminar elemento');
+      this.router.navigate(['']);
+      }
     })
-   }
+  }
+  login(){
+    this.router.navigate(['/login'])
+  }
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
+  }
 
 }
