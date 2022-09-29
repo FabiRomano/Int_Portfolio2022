@@ -18,7 +18,7 @@ export class HySComponent implements OnInit {
    this.getSkills()
   }
   public getSkills():void{
-    this.skillsService.getSkills().subscribe({
+    this.skillsService.verSkills().subscribe({
       next: (response: Skills[]) => {
       this.skills=response;
     },

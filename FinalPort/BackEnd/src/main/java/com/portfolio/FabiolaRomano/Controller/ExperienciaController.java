@@ -50,7 +50,7 @@ public class ExperienciaController {
           return new ResponseEntity<>(nuevoExperiencia,HttpStatus.CREATED);
     }
     
-    @DeleteMapping("borrar/{id}")
+    @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<?> borrarExperiencia(@PathVariable ("id") Long id){
         experienciaService.eliminarExperiencia(id);
         return new ResponseEntity<>(HttpStatus.OK);
