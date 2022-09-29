@@ -18,7 +18,7 @@ export class SkillsService {
   }
 
   public agregarSkills(skills:Skills):Observable<Skills>{
-    return this.http.post<Skills>(`${this.apiServerUrl}/skills/agregar`, skills);
+    return this.http.put<Skills>(`${this.apiServerUrl}/skills/agregar`, skills);
   }
 
   public editarSkills(skills:Skills):Observable<Skills>{

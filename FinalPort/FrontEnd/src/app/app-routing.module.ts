@@ -9,6 +9,7 @@ import { NuevaExperienciaComponent } from './components/experiencia/nueva-experi
 import { HomeComponent } from './components/home/home.component';
 import { EditarHysComponent } from './components/hy-s/editar-hys/editar-hys.component';
 import { HySComponent } from './components/hy-s/hy-s.component';
+import { NuevaHysComponent } from './components/hy-s/nueva-hys/nueva-hys.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'nuevaExperiencia', component: NuevaExperienciaComponent },
   { path: 'editarExperiencia/:idExp', component: EditarExperienciaComponent },
   { path: 'hys ' , component: HySComponent },
-  { path: 'editarHys/:idSki', component: EditarHysComponent}
+  { path: 'editarHys/:idSki', component: EditarHysComponent},
+  { path: 'nuevaHys', component: NuevaHysComponent}
 
 
   

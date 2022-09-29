@@ -1,1 +1,41 @@
-<p>nueva-hys works!</p>
+<div class="inicio">
+    <div class="container">
+        <div class="row">
+            <div class="tarjeta">
+                <form (ngSubmit)="onCrearSkills()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="habilidad">Habilidad</label> 
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        id="habilidad" 
+                        name="habilidad" 
+                        [(ngModel)]="nombreSkills" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="nivel">Nivel</label> 
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        id="nivel" 
+                        name="nivel" 
+                        [(ngModel)]="porcentajeSkills" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="img">Imagen Url</label> 
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        id="img" 
+                        name="img" 
+                        [(ngModel)]="fotoSkills" required="">
+                    </div>
+                    <button class="boton">
+                        Agregar habilidad
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
