@@ -1,5 +1,5 @@
 export class Experience{
-    id?:number;
+    idExp?:any;
     empresaExp: string;
     fechaInicioExp:string;
     fechaFinExp: string;

@@ -37,7 +37,7 @@ export class EditarEducacionComponent implements OnInit {
   public onEditarEducation(): void {
     this.educationService.editarEducation(this.educacion).subscribe({
       next: (response: Education) => {
-        console.log(response);
+      
         this.router.navigate(['']);
       },
       error: (error: HttpErrorResponse) => {

@@ -12,15 +12,15 @@
           <tbody>
               <tr *ngFor="let experience of experiences">
                   <td>
-                      <h3>{{experience.empresaExp}}</h3>
+                      <h5>{{experience.empresaExp}}</h5>
                   </td>
                   <td>{{experience.descripcionExp}}</td>
                   <td >
-                      <button class="btn btn-light" routerLink="/editarexperiencia/{{experience.id}}">
+                      <button class="btn btn-light" routerLink="/editarExperiencia/{{experience.idExp}}">
                           <i class="bi bi-pencil-fill"></i> EDITAR</button>
                   </td>
                   <td >
-                      <button class="btn btn-danger" (click)="(experience.id)">
+                      <button class="btn btn-danger" (click)="onEliminarExperience(experience.idExp)">
                           <i class="bi bi-trash-fill"></i> BORRAR</button>
                   </td>
               </tr>

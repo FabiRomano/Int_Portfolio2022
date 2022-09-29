@@ -1,1 +1,56 @@
-<p>editar-experiencia works!</p>
+<div class="inicio">
+    <div class="container" *ngIf="experiencia">
+      <div class="row">
+        <div class="tarjeta">
+          <form (ngSubmit)="onEditarExperience()" novalidate #f="ngForm">
+            <div class="form-group">
+              <label for="nombreEmpresa">Nombre de la Empresa</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombreEmpresa"
+                name="nombreEmpresa"
+                [(ngModel)]="experiencia.empresaExp"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="estado">Puesto</label>
+              <input
+                type="text"
+                class="form-control"
+                id="puesto "
+                name="puesto"
+                [(ngModel)]="experiencia.descripcionExp"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="fechaIniExp">Fecha de inicio</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fechaIniExp"
+                name="fechaIniExp"
+                [(ngModel)]="experiencia.fechaInicioExp"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="fechaFinExp">Fecha de finalizacion</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fechaFinExp"
+                name="fechaFinExp"
+                [(ngModel)]="experiencia.fechaFinExp"
+                required=""
+              />
+            </div>
+         
+            <button class="boton">Editar experiencia</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

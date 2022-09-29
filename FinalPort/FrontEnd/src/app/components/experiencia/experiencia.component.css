@@ -3,11 +3,12 @@
 }
 
 
-h1, h3{
+h1, h5{
     display: inline;
     color: aliceblue;
 }
 
-.table{
+td{
     color: aqua;
 }
+

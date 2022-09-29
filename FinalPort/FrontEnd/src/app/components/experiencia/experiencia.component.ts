@@ -33,30 +33,36 @@ export class ExperienciaComponent implements OnInit {
     }
 
   }
-
-  public verExperience(): void {
-    this.experienceService.verExperience().subscribe(data=>{this.experiences=data;})
-  }
-  
-  public onEliminarExperiencia(idExp:number):void{
-    this.experienceService.eliminarExperience(idExp).subscribe({
-      next:(response:void)=>{
-        alert("Se elimino correctamente el elemento");
-        this.router.navigate(['']);
-               
-      },
-      error:(error:HttpErrorResponse)=>{
-      alert('No se pudo eliminar elemento');
-      this.router.navigate(['']);
-      }
-    })
-  }
   login(){
     this.router.navigate(['/login'])
   }
+
   onLogOut():void{
     this.tokenService.logOut();
     window.location.reload();
   }
 
+   public verExperience(): void {
+    this.experienceService.verExperience().subscribe(data=>{
+      this.experiences=data;})
+  }
+  
+  public onEliminarExperience(idExp:number):void{
+    this.experienceService.eliminarExperience(idExp).subscribe({
+      next:(response:void)=>{
+        alert("Se elimino correctamente el elemento");
+        this.router.navigate(['']);
+
+        console.log(JSON.stringify(idExp));       
+      },
+      
+      error:(error:HttpErrorResponse)=>{
+      alert('No se pudo eliminar elemento');
+      this.router.navigate(['']);
+      }
+    })
+  
+
+
+}
 }

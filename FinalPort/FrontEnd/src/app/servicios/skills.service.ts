@@ -13,19 +13,19 @@ export class SkillsService {
 
   constructor(private http: HttpClient) { }
   
-  public getSkills():Observable<Skills[]>{
+  public verSkills():Observable<Skills[]>{
     return this.http.get<Skills[]>(`${this.apiServerUrl}/skills/todo`);
   }
 
-  public addSkills(skills:Skills):Observable<Skills[]>{
-    return this.http.post<Skills[]>(`${this.apiServerUrl}/skills/agregar`, skills);
+  public agregarSkills(skills:Skills):Observable<Skills>{
+    return this.http.post<Skills>(`${this.apiServerUrl}/skills/agregar`, skills);
   }
 
-  public updateSkills(skills:Skills):Observable<Skills[]>{
-  return this.http.put<Skills[]>(`${this.apiServerUrl}/Skills/editar`, skills);
+  public editarSkills(skills:Skills):Observable<Skills>{
+  return this.http.put<Skills>(`${this.apiServerUrl}/Skills/editar`, skills);
   }
 
-  public deleteSkills(skillsId:number):Observable<void>{
+  public eliminarSkills(skillsId:number):Observable<void>{
   return this.http.delete<void>(`${this.apiServerUrl}/skills/eliminar/${skillsId}`);
   }
 

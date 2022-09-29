@@ -24,14 +24,14 @@ export class NuevaExperienciaComponent implements OnInit {
   }
 
   onAgregarExperience(): void {
-    const experiences = new Experience(
+    const experiencia = new Experience(
       this.empresaExp,
       this.fechaInicioExp,
       this.fechaFinExp,
       this.descripcionExp,
      
     );
-    this.experienceService.agregarExperiece(experiences).subscribe(
+    this.experienceService.agregarExperiece(experiencia).subscribe(
       (data) => {
         alert('Nueva Experiencia añadida');
         this.router.navigate(['/experiencia']);
