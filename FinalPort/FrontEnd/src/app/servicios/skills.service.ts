@@ -22,7 +22,7 @@ export class SkillsService {
   }
 
   public editarSkills(skills:Skills):Observable<Skills>{
-  return this.http.put<Skills>(`${this.apiServerUrl}/Skills/editar`, skills);
+  return this.http.put<Skills>(`${this.apiServerUrl}/skills/editar`, skills);
   }
 
   public eliminarSkills(skillsId:number):Observable<void>{

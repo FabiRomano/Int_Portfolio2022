@@ -33,13 +33,7 @@ export class HySComponent implements OnInit {
 
   }
 
-  login(){
-    this.router.navigate(['/login'])
-  }
-  onLogOut():void{
-    this.tokenService.logOut();
-    window.location.reload();
-  }
+  
 
   public verSkills(): void {
     this.skillsService.verSkills().subscribe(data=>{this.skills=data;})

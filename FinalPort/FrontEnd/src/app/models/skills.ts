@@ -1,5 +1,5 @@
 export class Skills{
-    idSki?: any;
+    idSkills?: any;
     nombreSkills: string;
     fotoSkills: string;
     porcentajeSkills: number;
