@@ -7,6 +7,7 @@ import { EditarExperienciaComponent } from './components/experiencia/editar-expe
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia/nueva-experiencia.component';
 import { HomeComponent } from './components/home/home.component';
+import { HySComponent } from './components/hy-s/hy-s.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'nuevaEducacion', component: NuevaEducacionComponent},
   { path: 'experiencia', component: ExperienciaComponent },
   { path: 'nuevaExperiencia', component: NuevaExperienciaComponent },
-  { path: 'editarExperiencia/:idExp', component: EditarExperienciaComponent }
+  { path: 'editarExperiencia/:idExp', component: EditarExperienciaComponent },
+  { path: 'hys ' , component: HySComponent }
   
 ];
 
