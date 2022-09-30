@@ -4,7 +4,7 @@ export class Skills{
     porcentajeSkills: any;
     fotoSkills: string;
 
-    constructor(nombreSkills: string, fotoSkills: string,porcentajeSkills: any){
+    constructor(nombreSkills: string, fotoSkills: string, porcentajeSkills: any){
 
         this.nombreSkills = nombreSkills;
         this.porcentajeSkills =porcentajeSkills;

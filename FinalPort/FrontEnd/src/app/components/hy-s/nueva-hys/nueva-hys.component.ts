@@ -26,7 +26,7 @@ export class NuevaHysComponent implements OnInit {
         alert("Nueva habilidad añadida");
         this.router.navigate(['/hys']);
 
-        console.log(JSON.stringify(Skills));
+        console.log(JSON.stringify(skills));
 
     },err =>{
       alert("la operacion fallo");
