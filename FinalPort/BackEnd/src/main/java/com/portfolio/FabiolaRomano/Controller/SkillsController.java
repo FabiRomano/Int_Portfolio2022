@@ -46,7 +46,7 @@ public class SkillsController {
     @PutMapping("/agregar")
     public ResponseEntity<Skills> crearSkills(@RequestBody Skills skills){
         
-        Skills nuevoSkills = skillsService.addSkills(skills);
+        Skills nuevoSkills = skillsService.agregarSkills(skills);
           return new ResponseEntity<>(nuevoSkills,HttpStatus.CREATED);
     }
     
