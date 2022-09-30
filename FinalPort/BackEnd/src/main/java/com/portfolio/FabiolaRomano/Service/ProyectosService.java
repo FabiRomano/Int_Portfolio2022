@@ -1,6 +1,7 @@
 package com.portfolio.FabiolaRomano.Service;
 
 import com.portfolio.FabiolaRomano.Entity.Proyectos;
+import com.portfolio.FabiolaRomano.Exception.UserNotFoundException;
 import com.portfolio.FabiolaRomano.Repository.ProyectosRepo;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +44,10 @@ public class ProyectosService {
         proyectosRepo.deleteById(id);
     } 
     
+    public Proyectos buscarProyectos(Long id) {
+       return proyectosRepo.findById(id).orElseThrow(()->new UserNotFoundException("educacion no encontrada"));
+    }
+
+   
     
 }

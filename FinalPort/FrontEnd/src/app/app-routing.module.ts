@@ -11,6 +11,9 @@ import { EditarHysComponent } from './components/hy-s/editar-hys/editar-hys.comp
 import { HySComponent } from './components/hy-s/hy-s.component';
 import { NuevaHysComponent } from './components/hy-s/nueva-hys/nueva-hys.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditarProyectosComponent } from './components/proyecto/editar-proyectos/editar-proyectos.component';
+import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos/nuevos-proyectos.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -23,7 +26,10 @@ const routes: Routes = [
   { path: 'editarExperiencia/:idExp', component: EditarExperienciaComponent },
   { path: 'hys ' , component: HySComponent },
   { path: 'editarHys/:idSki', component: EditarHysComponent},
-  { path: 'nuevaHys', component: NuevaHysComponent}
+  { path: 'nuevaHys', component: NuevaHysComponent},
+  { path: 'proyecto', component: ProyectoComponent},
+  { path: 'nuevosProyectos', component: NuevosProyectosComponent},
+  { path: 'editarProyectos/idProyec', component: EditarProyectosComponent}
 
 
   
