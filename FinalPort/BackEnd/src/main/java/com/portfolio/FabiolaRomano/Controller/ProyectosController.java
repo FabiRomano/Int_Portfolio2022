@@ -57,5 +57,9 @@ public class ProyectosController {
     }
     
     
-    
+        @GetMapping("/buscar/{id}")
+    public ResponseEntity<Proyectos> buscarProyectos(@PathVariable("id") Long id){
+        Proyectos proyectosBuscado=proyectosService.buscarProyectos(id);
+        return new ResponseEntity<>(proyectosBuscado,HttpStatus.OK);
+    }
 }

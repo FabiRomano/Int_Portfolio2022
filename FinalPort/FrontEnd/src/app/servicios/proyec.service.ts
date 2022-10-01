@@ -12,20 +12,25 @@ export class ProyecService {
 
   constructor(private http: HttpClient) { }
 
-  public getProyec():Observable<Proyec[]>{
+  public verProyec():Observable<Proyec[]>{
     return this.http.get<Proyec[]>(`${this.apiServerUrl}/proyectos/todo`);
   }
 
-  public addProyec(proyec:Proyec):Observable<Proyec[]>{
-    return this.http.post<Proyec[]>(`${this.apiServerUrl}/proyectos/agregar`, proyec);
+  public agregarProyec(proyec:Proyec):Observable<Proyec[]>{
+    return this.http.put<Proyec[]>(`${this.apiServerUrl}/proyectos/agregar`, proyec);
   }
 
-  public updateProyec(proyec:Proyec):Observable<Proyec[]>{
-  return this.http.put<Proyec[]>(`${this.apiServerUrl}/Proyectos/editar`, proyec);
+  public editarProyec(proyec:Proyec):Observable<Proyec>{
+  return this.http.put<Proyec>(`${this.apiServerUrl}/proyectos/editar`, proyec);
   }
 
-  public deleteProyec(proyecId:number):Observable<void>{
+  public eliminarProyec(proyecId:number):Observable<void>{
   return this.http.delete<void>(`${this.apiServerUrl}/proyectos/eliminar/${proyecId}`);
+  }
+
+  
+  public buscarProyec(idProyec: number):Observable<Proyec>{
+    return this.http.get<Proyec>(`${this.apiServerUrl}/proyectos/buscar/${idProyec}`);
   }
 
 }

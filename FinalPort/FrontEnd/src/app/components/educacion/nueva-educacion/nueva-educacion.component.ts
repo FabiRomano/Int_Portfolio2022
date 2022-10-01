@@ -15,8 +15,10 @@ export class NuevaEducacionComponent implements OnInit {
   certificadoEdu: string=' ';
   img: string=' ';
 
-  constructor(private educationService : EducationService,
-              private router:Router) { }
+  constructor(
+    private educationService : EducationService,
+    private router:Router
+    ) { }
 
   ngOnInit(): void {
   }

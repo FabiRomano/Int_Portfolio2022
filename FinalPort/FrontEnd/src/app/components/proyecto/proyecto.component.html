@@ -1,41 +1,36 @@
-<div class="row" >
-   
-    <div class="contenedor">
-        <h2>Proyectos Realizados</h2>
-        <div class="text-center">
-            <button type="button" class="btn btn-success" (click)=" ('add')">
-               <a class="nav-link">
-                 añadir proyectos <span class="sr-only">(current)</span>
-       
-               </a>
-           </button>
-         </div>
-        <br><div class="col-sm-12 col-md-7 col-lg-7 parte1" *ngFor="let proyec of proyects">
-            <div class="col-text-center">
-                <a
+<div class="row">
+  <h1>Proyectos</h1>
+  <div class="col-lg-2">
+      <button type="button" class="btn btn-dark" routerLink="/nuevosProyectos" >
+          Agregar Proyectos
+      </button>
+  </div>
+
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+      <table class="table">
+          <tbody>
+              <tr *ngFor="let proyec of proyects">
                
-                   class="btn btn-primary tooltips"
-                   data-placement="top"
-                   data-toggle="tooltip"
-                   data-original-title="Edit"
-                   ><i class="fa fa-pencil"></i>
-                 </a>
-                 <a
-               
-                 class="btn btn-secondary tooltips"
-                 data-placement="top"
-                 data-toggle="tooltip"
-                 data-original-title="Delete"
-                 ><i class="fa fa-times"></i>
-               </a> 
-            </div>
-           <h4> {{proyec.nombreProyectos}} </h4>
-           <p>{{proyec.inicioProyectos + " - "  + proyec.finProyectos}}</p><br>
-           <p>{{proyec.descripcionProyectos}}</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-         
-        </div>
-    </div>
+                  <td>
+                      <h5>{{ proyec.nombreProyectos}}</h5>
+                  </td>
+                  <td>{{proyec.descripcionProyectos}}</td>
+                  <td>{{proyec.inicioProyectos}}</td>
+                  <td>{{proyec.finProyectos}}</td>
+                   <td  > 
+                       <button class="btn btn-light" routerLink="/editarProyectos/{{proyec.idProyectos}}">
+                          <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                   </td>
+                   <td >
+                       <button class="btn btn-danger" (click)="onEliminarProyec (proyec.idProyectos)">
+                          <i class="bi bi-trash-fill"></i> BORRAR</button> 
+                  </td> 
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
 </div>
+
 

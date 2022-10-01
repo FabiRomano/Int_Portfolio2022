@@ -21,6 +21,10 @@ import { EditarEducacionComponent } from './components/educacion/editar-educacio
 import { NuevaEducacionComponent } from './components/educacion/nueva-educacion/nueva-educacion.component';
 import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia/nueva-experiencia.component';
 import { EditarExperienciaComponent } from './components/experiencia/editar-experiencia/editar-experiencia.component';
+import { EditarHysComponent } from './components/hy-s/editar-hys/editar-hys.component';
+import { NuevaHysComponent } from './components/hy-s/nueva-hys/nueva-hys.component';
+import { EditarProyectosComponent } from './components/proyecto/editar-proyectos/editar-proyectos.component';
+import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos/nuevos-proyectos.component';
 
 
 
@@ -42,6 +46,10 @@ import { EditarExperienciaComponent } from './components/experiencia/editar-expe
     NuevaEducacionComponent,
     NuevaExperienciaComponent,
     EditarExperienciaComponent,
+    EditarHysComponent,
+    NuevaHysComponent,
+    EditarProyectosComponent,
+    NuevosProyectosComponent,
    
    ],
 

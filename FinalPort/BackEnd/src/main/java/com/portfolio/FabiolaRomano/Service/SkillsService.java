@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
-public class SkillsService {
+public class SkillsService  {
     
     private final SkillsRepo skillsRepo;
     
@@ -22,7 +22,7 @@ public class SkillsService {
         this.skillsRepo = skillsRepo;
     }
     
-     public Skills addSkills(Skills skills){
+     public Skills agregarSkills(Skills skills){
     
         return skillsRepo.save(skills);
     }
@@ -38,13 +38,19 @@ public class SkillsService {
         return skillsRepo.save(skills);
      
     }
-    
-    public void eliminarSkills(long id){
-    
-        skillsRepo.deleteById(id);
-    } 
+  
     
       public Skills buscarSkills(Long id) {
         return skillsRepo.findById(id).orElseThrow(()->new UserNotFoundException("skills no encontrado"));
     }
+
+   
+
+    public void eliminarSkills(Long id) {
+         skillsRepo.deleteById(id);
+    }
+
+   
+
+   
 }
