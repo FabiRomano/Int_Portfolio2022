@@ -45,7 +45,7 @@ public class ProyectosService {
     } 
     
     public Proyectos buscarProyectos(Long id) {
-       return proyectosRepo.findById(id).orElseThrow(()->new UserNotFoundException("educacion no encontrada"));
+       return proyectosRepo.findById(id).orElseThrow(()->new UserNotFoundException("proyecto no encontrada"));
     }
 
    

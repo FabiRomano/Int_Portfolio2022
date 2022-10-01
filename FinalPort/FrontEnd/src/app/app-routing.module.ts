@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'nuevaHys', component: NuevaHysComponent},
   { path: 'proyecto', component: ProyectoComponent},
   { path: 'nuevosProyectos', component: NuevosProyectosComponent},
-  { path: 'editarProyectos/idProyec', component: EditarProyectosComponent}
+  { path: 'editarProyectos/:idProyec', component: EditarProyectosComponent}
 
 
   

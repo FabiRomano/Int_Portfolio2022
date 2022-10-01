@@ -1,5 +1,5 @@
 export class Proyec{
-    idProyec?: any;
+    idProyectos?: any;
     nombreProyectos: string;
     inicioProyectos:string;
     finProyectos: string;

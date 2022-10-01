@@ -20,8 +20,8 @@ export class ProyecService {
     return this.http.put<Proyec[]>(`${this.apiServerUrl}/proyectos/agregar`, proyec);
   }
 
-  public editarProyec(proyec:Proyec):Observable<Proyec[]>{
-  return this.http.put<Proyec[]>(`${this.apiServerUrl}/Proyectos/editar`, proyec);
+  public editarProyec(proyec:Proyec):Observable<Proyec>{
+  return this.http.put<Proyec>(`${this.apiServerUrl}/proyectos/editar`, proyec);
   }
 
   public eliminarProyec(proyecId:number):Observable<void>{

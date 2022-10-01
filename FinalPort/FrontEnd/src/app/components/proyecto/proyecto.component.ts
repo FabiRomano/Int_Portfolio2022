@@ -46,13 +46,13 @@ export class ProyectoComponent implements OnInit {
       });
     }
   
-    public onEliminarProyec(idProyec: number): void {
-      this.proyecService.eliminarProyec (idProyec).subscribe({
+    public onEliminarProyec(idProyectos: number): void {
+      this.proyecService.eliminarProyec (idProyectos).subscribe({
         next: (response: void) => {
           alert('Se elimino correctamente');
           this.router.navigate(['']);
 
-         console.log(JSON.stringify(idProyec));
+         console.log(JSON.stringify(idProyectos));
         },
         
         error: (error: HttpErrorResponse) => {

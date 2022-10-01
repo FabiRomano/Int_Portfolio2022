@@ -1,1 +1,57 @@
-<p>editar-proyectos works!</p>
+<div class="inicio">
+    <div class="container" *ngIf="proyecto">
+      <div class="row">
+        <div class="tarjeta">
+          <form (ngSubmit)="onEditarProyec()" novalidate #f="ngForm">
+            <div class="form-group">
+              <label for="instituto">Nombre ded Proyecto</label>
+              <input
+                type="text"
+                class="form-control"
+                id="instituto"
+                name="instituto"
+                [(ngModel)]="proyecto.nombreProyectos"
+                required=""
+              />
+          
+            </div>
+            <div class="form-group">
+              <label for="fechaIniEdu">Fecha de inicio</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fechaIniEdu"
+                name="fechaIniEdu"
+                [(ngModel)]="proyecto.inicioProyectos"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="fechaFinEdu">Fecha de finalizacion</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fechaFinEdu"
+                name="fechaFinEdu"
+                [(ngModel)]="proyecto.finProyectos"
+                required=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="titutlo">Descripcion</label>
+              <input
+                type="text"
+                class="form-control"
+                id="titutlo"
+                name="titutlo"
+                [(ngModel)]="proyecto.descripcionProyectos"
+                required=""
+              />
+            </div>
+            <button class="boton">Editar Educacion</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+

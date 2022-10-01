@@ -11,6 +11,7 @@
       <table class="table">
           <tbody>
               <tr *ngFor="let proyec of proyects">
+               
                   <td>
                       <h5>{{ proyec.nombreProyectos}}</h5>
                   </td>
@@ -18,11 +19,11 @@
                   <td>{{proyec.inicioProyectos}}</td>
                   <td>{{proyec.finProyectos}}</td>
                    <td  > 
-                       <button class="btn btn-light" routerLink="/editarProyectos/{{proyec.idProyec}}">
+                       <button class="btn btn-light" routerLink="/editarProyectos/{{proyec.idProyectos}}">
                           <i class="bi bi-pencil-fill"></i> EDITAR</button>
                    </td>
                    <td >
-                       <button class="btn btn-danger" (click)="onEliminarProyec (proyec.idProyec)">
+                       <button class="btn btn-danger" (click)="onEliminarProyec (proyec.idProyectos)">
                           <i class="bi bi-trash-fill"></i> BORRAR</button> 
                   </td> 
               </tr>
