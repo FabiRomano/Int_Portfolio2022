@@ -12,7 +12,7 @@ export class AcercaDeService {
   
   constructor(private http: HttpClient) {}
 
-  public getPersona():Observable<Persona> {
+  public verPersona():Observable<Persona> {
      return this.http.get<Persona>(`${this.apiServerUrl}/persona/id/1`);
 
 }

@@ -23,7 +23,7 @@ export class AcercaDeComponent implements OnInit {
     ) {}
 
   ngOnInit(): void {
-  this.getPersona();
+  this.verPersona();
   if(this.tokenService.getToken()){
     this.isLogged=true;
   }else{
@@ -32,8 +32,16 @@ export class AcercaDeComponent implements OnInit {
 
   }
 
-  public getPersona():void {
-    this.acercaDeservice.getPersona().subscribe({
+  login(){
+    this.router.navigate(['/login'])
+  }
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
+  }
+
+  public verPersona():void {
+    this.acercaDeservice.verPersona().subscribe({
       next: (Response:Persona) =>{
         this.persona =Response;
       },
@@ -44,11 +52,5 @@ export class AcercaDeComponent implements OnInit {
     })
   }
 
-  login(){
-    this.router.navigate(['/login'])
-  }
-  onLogOut():void{
-    this.tokenService.logOut();
-    window.location.reload();
-  }
+
 }

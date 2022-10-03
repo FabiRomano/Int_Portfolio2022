@@ -13,7 +13,7 @@ export class EditarAcercaDeComponent implements OnInit {
 
   public persona:Persona[]=[];
   per: Persona = (null as any);
-  public editarDescripcion: Persona | undefined;
+  public editarpersona: Persona | undefined;
 
   constructor(
     private acercaDeService: AcercaDeService,

@@ -18,7 +18,8 @@ import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
+  {path:  '', component: LoginComponent },
   {path: 'login', component: LoginComponent},
   {path: 'educacion', component: EducacionComponent },
   {path: 'editarEducacion/:idEdu', component: EditarEducacionComponent },
