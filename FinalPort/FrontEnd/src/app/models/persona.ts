@@ -1,5 +1,5 @@
 export class Persona{
-   id?: number;
+   id?: any;
    nombre: string;
    apellido: string;
    titulo: string;

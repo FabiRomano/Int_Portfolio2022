@@ -12,12 +12,12 @@ export class AcercaDeService {
   
   constructor(private http: HttpClient) {}
 
-  public getPersona():Observable<Persona> {
+  public verPersona():Observable<Persona> {
      return this.http.get<Persona>(`${this.apiServerUrl}/persona/id/1`);
 
 }
 
-public updatePersona(persona:Persona):Observable<Persona>{
+public editarPersona(persona:Persona):Observable<Persona>{
   return this.http.put<Persona>(`${this.apiServerUrl}/persona/editar`, persona);
 }
 

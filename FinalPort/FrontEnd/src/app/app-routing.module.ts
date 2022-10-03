@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { EditarAcercaDeComponent } from './components/acerca-de/editar-acerca-de/editar-acerca-de.component';
 import { EditarEducacionComponent } from './components/educacion/editar-educacion/editar-educacion.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NuevaEducacionComponent } from './components/educacion/nueva-educacion/nueva-educacion.component';
@@ -16,7 +18,8 @@ import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
+  {path:  '', component: LoginComponent },
   {path: 'login', component: LoginComponent},
   {path: 'educacion', component: EducacionComponent },
   {path: 'editarEducacion/:idEdu', component: EditarEducacionComponent },
@@ -29,7 +32,9 @@ const routes: Routes = [
   { path: 'nuevaHys', component: NuevaHysComponent},
   { path: 'proyecto', component: ProyectoComponent},
   { path: 'nuevosProyectos', component: NuevosProyectosComponent},
-  { path: 'editarProyectos/:idProyec', component: EditarProyectosComponent}
+  { path: 'editarProyectos/:idProyec', component: EditarProyectosComponent},
+  { path: 'acercade', component: AcercaDeComponent },
+  { path: 'editarAcercaDe/:id', component:EditarAcercaDeComponent}
 
 
   

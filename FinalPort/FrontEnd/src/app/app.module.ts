@@ -25,6 +25,7 @@ import { EditarHysComponent } from './components/hy-s/editar-hys/editar-hys.comp
 import { NuevaHysComponent } from './components/hy-s/nueva-hys/nueva-hys.component';
 import { EditarProyectosComponent } from './components/proyecto/editar-proyectos/editar-proyectos.component';
 import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos/nuevos-proyectos.component';
+import { EditarAcercaDeComponent } from './components/acerca-de/editar-acerca-de/editar-acerca-de.component';
 
 
 
@@ -50,6 +51,7 @@ import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos
     NuevaHysComponent,
     EditarProyectosComponent,
     NuevosProyectosComponent,
+    EditarAcercaDeComponent,
    
    ],
 
