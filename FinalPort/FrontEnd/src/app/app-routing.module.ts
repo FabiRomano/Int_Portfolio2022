@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: 'experiencia', component: ExperienciaComponent },
   { path: 'nuevaExperiencia', component: NuevaExperienciaComponent },
   { path: 'editarExperiencia/:idExp', component: EditarExperienciaComponent },
-  { path: 'hys ' , component: HySComponent },
+  { path: 'hys' , component: HySComponent },
   { path: 'editarHys/:idSki', component: EditarHysComponent},
   { path: 'nuevaHys', component: NuevaHysComponent},
   { path: 'proyecto', component: ProyectoComponent},
