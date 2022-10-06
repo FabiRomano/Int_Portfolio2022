@@ -1,23 +1,23 @@
 <div  class="row" *ngIf="persona" >
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-
-        <div class="btncontrol">
-            <a
-              routerLink="/editarAcercaDe/{{ persona.id }}"
-              class="btnm"
-              ><i class="fa fa-pencil"></i
-            ></a>
-          </div>
         
         <img  src= "{{persona.fotoPerfil}}" class="img-fluid" alt="Imagen de perfil" id="fotoperfil">
     </div>
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
+
         <h4 id="nombre"> {{persona.nombre +" "  + persona.apellido }}</h4>
         <h6 id="titulo">{{persona.titulo}}</h6>
+       </div>
 
-       
-        </div>
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+
+            <div class="btncontrol">
+                <a
+                  routerLink="/editarAcercaDe/{{ persona.id }}"
+                  class="btnm"
+                  ><i class="fa fa-pencil"></i
+                ></a>
+              </div>
             <span>
                 <p><b>{{persona.descripcion}}</b></p>
             </span>

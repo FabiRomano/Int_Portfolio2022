@@ -1,24 +1,18 @@
-.container{
-     
-    margin: 0;
-    padding: 0;
+.row
+{
+ 
+    margin-top: 30px;
     box-sizing: content-box; 
 }
 
- #logoAP{
-     width: 140px;
-     border-radius: 50px;
-     margin-top: 5px;
- }
-
-
- .button
+.button
 {
     float: right;
     margin-top: -70px;
     min-width:400px;
     display: flex;
     justify-content: space-around;
+  
    
     
 }
@@ -41,30 +35,28 @@
 {
     transform: scale(1.50);
   
-} 
-
-
-
-#facebook
-{
-    color:   #1877f2;
-
-}
- 
- #instagram
-{
-    color:  #c32aa3 ;
 }
 
-#twitter
+#correo
 {
-    color: #1da1f2;
+    color: bisque;
 }
 
-#github
+#telefono
 {
-     color:#f1f1f1;
+    color: deeppink;
 }
+
+#whatsapp
+{
+    color: rgb(64, 235, 87);
+}
+
+#flecha
+{
+    color: darkviolet;
+}
+
 
 .btn
 
@@ -73,7 +65,11 @@
     border-radius: 30px;
 }
  
-
+p 
+{
+    margin-top: 10px;
+   color: aliceblue;
+}
 
  /*---para la vista de celular ---*/
  

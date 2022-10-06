@@ -26,6 +26,8 @@ import { NuevaHysComponent } from './components/hy-s/nueva-hys/nueva-hys.compone
 import { EditarProyectosComponent } from './components/proyecto/editar-proyectos/editar-proyectos.component';
 import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos/nuevos-proyectos.component';
 import { EditarAcercaDeComponent } from './components/acerca-de/editar-acerca-de/editar-acerca-de.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 
 
@@ -52,6 +54,9 @@ import { EditarAcercaDeComponent } from './components/acerca-de/editar-acerca-de
     EditarProyectosComponent,
     NuevosProyectosComponent,
     EditarAcercaDeComponent,
+    ContactoComponent,
+    NavBarComponent,
+    
    
    ],
 
@@ -60,7 +65,7 @@ import { EditarAcercaDeComponent } from './components/acerca-de/editar-acerca-de
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ], 
   providers: [],
   bootstrap: [AppComponent]

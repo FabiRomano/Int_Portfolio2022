@@ -10,13 +10,22 @@ div{
   
 }
 
+.btncontrol{
+
+    float: right;
+    margin-top: -45px;
+}
+a{
+    color: darkviolet;
+}
+
 /* etiqueta fotoperfil */
     @media (min-width:576px) {
 #fotoperfil{
     position: absolute;
     width: 180px;
     border-radius: 50%;
-    left: 35px;;
+    left: 12px;;
     top: 450px;
     box-shadow: -10px -5px 10px rgba(26, 23, 25, 0.801);
 
@@ -28,7 +37,7 @@ div{
         position: absolute;
         width: 200px;
         border-radius: 80%;
-        left:100px;
+        left:130px;
         top: 610px;
         box-shadow: 4px -3px 4px rgba(226, 28, 160, 0.5);
 
