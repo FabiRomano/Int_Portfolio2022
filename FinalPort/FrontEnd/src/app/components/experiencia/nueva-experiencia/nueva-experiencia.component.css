@@ -6,9 +6,10 @@
   display: flex;
   font-family: "Raleway", sans-serif;
   align-items: center;
-  /*justify-content: center;*/
+
   text-align:center;
   background-color:#e8e8e8;
+  color: aliceblue;
 
 }
 .container{
