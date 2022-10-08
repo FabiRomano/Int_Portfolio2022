@@ -1,15 +1,12 @@
 <div class="min-vh-100 container-fuild">
   <div class="tarjeta">
       <div class="row">
-          <div class="col-md-12 col-lg-6">
-              <div class="mensaje">
-                  <div class="centrar">    
-                      <p>dime quien eres y te mostrare el                    
-                      <span>cambio</span></p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-12 col-lg-6">
+        <div class="texto">
+            <h1>Bienvenidos a mi Portfolio</h1><br>
+         <h3>Inicia sesion para realizar cambios</h3>
+       
+        
+          <div class="col-md-12 col-lg-12  centrarForm ">
               <div class="login">
                   <div class="centrar">
                     
@@ -17,10 +14,14 @@
                           <label class="form-label" for="email">Email</label>
                           <input type="email" id="email" name="email" class="form-control form-control-lg" [(ngModel)]="email" required/>
                           <label class="form-label" for="password">Password</label>
-                          <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required/>                            
-                          <button class="boton" type="submit" routerLink="/home">Iniciar sesion</button>
-                        <a routerLink="/home">Entrar como Visitante</a>
+                          <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required/>   
+                          
+                     <div class="btn-debajo">
+                          <button class="boton" type="submit" routerLink="/home">Iniciar sesion</button> 
+                        <a routerLink="/home" class="boton">  Entrar como Visitante</a>
+                    </div>
                       </form>
+                    </div>
                   </div>
               </div>
           </div>

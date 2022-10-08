@@ -28,6 +28,7 @@ import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos
 import { EditarAcercaDeComponent } from './components/acerca-de/editar-acerca-de/editar-acerca-de.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { RedesComponent } from './components/redes/redes.component';
 
 
 
@@ -56,6 +57,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     EditarAcercaDeComponent,
     ContactoComponent,
     NavBarComponent,
+    RedesComponent,
     
    
    ],
