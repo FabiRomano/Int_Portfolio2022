@@ -5,3 +5,8 @@
     border-radius: 5px;
 } */
 
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}

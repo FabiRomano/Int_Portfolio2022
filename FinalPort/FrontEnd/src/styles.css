@@ -1,10 +1,71 @@
 *{
-    background-color: black
+    background-image: url(https://img.freepik.com/free-vector/blue-abstract-hud-technology-background_52683-21342.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* 
-*
-{
-    background: linear-gradient(gray, yellow, red, orange, blue);
-} */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+.inicio{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+ font-size: 15px;
+  text-align:center;
+  background-color:#e8e8e8;
+  color: rgb(29, 35, 41);
+
+}
+.container{
+    max-width: 60vw;
+    box-shadow: 15px 15px 20px #c5c5c5,
+                -15px -15px 20px #c5c5c5;
+    overflow: hidden;
+}
+
+.tarjeta{
+    display:block;
+    padding:15px;
+    border: none;
+    /* background-color:rgb(255, 255, 255); */
+    /* border-radius: 5px;     */
+}
+.boton {
+  background-color: #ffffff00;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border:3px solid #b10987;
+  /* outline: 2px solid rgb(99, 23, 23); */
+  padding: 5px 15px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+}
+.boton:hover {
+    background-color: #b10987;
+    color:#fff;
+}
+  .tarjeta form input{
+
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgba(83, 83, 83, 0.342);
+    margin-bottom: 10px;
+  }
+  .tarjeta form label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+  @media (max-width: 780px) {
+    .container{
+      max-width: 80vw;
+  }
+  }
+
 

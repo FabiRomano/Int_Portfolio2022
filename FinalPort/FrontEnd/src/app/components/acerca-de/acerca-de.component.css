@@ -1,22 +1,36 @@
 
+    *
+    {
+        background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211))
+    }
+    
+
 div{
     text-align: center;
-    color: white;
+    color: antiquewhite;
     box-shadow: 10px -4px 10px 12,rgba(226, 28, 160, 0.5);
     /* background-color: rgb(46, 37, 170); */
     padding-top: 30px;
     padding-right: 10px;
-    
+    font-size: 20px;
+    font-family: cursive;
   
 }
 
 .btncontrol{
 
     float: right;
-    margin-top: -45px;
+    margin-top: -50px;
 }
-a{
-    color: darkviolet;
+
+a
+{
+    color: black;
+}
+
+a :hover{
+    color: rgb(0, 174, 255);
+
 }
 
 /* etiqueta fotoperfil */
@@ -25,8 +39,8 @@ a{
     position: absolute;
     width: 180px;
     border-radius: 50%;
-    left: 12px;;
-    top: 450px;
+    left: 45px;;
+    top: 400px;
     box-shadow: -10px -5px 10px rgba(26, 23, 25, 0.801);
 
 
@@ -37,8 +51,8 @@ a{
         position: absolute;
         width: 200px;
         border-radius: 80%;
-        left:130px;
-        top: 610px;
+        left:170px;
+        top: 350px;
         box-shadow: 4px -3px 4px rgba(226, 28, 160, 0.5);
 
     }
@@ -48,7 +62,7 @@ a{
 #nombre{
     font-weight: bold;
     /* margin-top: 5px; */
-    box-shadow: 10px -4px 10px rgb(186, 22, 207);
+   
     
 }
 
@@ -57,7 +71,7 @@ a{
 #titulo{
     font-weight: bold;
     /* margin-top: 5px; */
-    box-shadow: 10px -4px 10px rgb(186, 22, 207);
+  
 }
 
 
