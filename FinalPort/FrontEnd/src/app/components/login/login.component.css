@@ -11,9 +11,10 @@
    text-align: center;
    font-family: cursive;
     color: rgb(13, 32, 49);
+    font-size: 15%;
 }
 
-/* .boton:hover
+.boton
 {
     color: rgb(41, 60, 77);
     font-size: 20px;
@@ -21,9 +22,9 @@
     background: transparent;
     text-align: center;
     border-radius: 20%;
-    transition: all .3s ease-in-out;
+    /* transition: all .3s ease-in-out; */
 
-} */
+}
 
 a{
     font-size: 30px;

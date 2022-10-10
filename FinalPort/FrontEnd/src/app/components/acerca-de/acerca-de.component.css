@@ -47,11 +47,11 @@ a :hover{
     @media (min-width:576px) {
 #fotoperfil{
     position: absolute;
-    width: 180px;
+    width: 200px;
     border-radius: 50%;
-    left: 45px;;
+    left: 80px;;
     top: 400px;
-    box-shadow: -10px -5px 10px rgba(26, 23, 25, 0.801);
+    box-shadow: -10px -5px 10px rgb(135, 22, 211);
 
 
 }}
