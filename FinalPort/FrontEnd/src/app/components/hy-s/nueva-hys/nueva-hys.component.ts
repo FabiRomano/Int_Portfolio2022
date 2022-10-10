@@ -19,7 +19,7 @@ export class NuevaHysComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onCrearSkills():void{
+  onAgregarSkills():void{
     const skills=new Skills(this.nombreSkills, this.porcentajeSkills, this.fotoSkills);
     this.skillsService.agregarSkills(skills).subscribe(
       data=>{

@@ -1,7 +1,7 @@
 <div class="row">
   <h1>Experiencia laboral</h1>
   <div class="col-lg-2">
-      <button type="button" class="btn btn-dark" routerLink="/nuevaExperiencia" >
+      <button type="button" class="boton" routerLink="/nuevaExperiencia" >
           Nueva Experiencia
       </button>
   </div>
@@ -17,12 +17,12 @@
                   <td>{{experience.descripcionExp}}</td>
                   <td >
        
-                      <button class="btn btn-light"  
+                      <button class="boton"  
                       routerLink="/editarExperiencia/{{experience.idExp}}">
                           <i class="bi bi-pencil-fill"></i> EDITAR</button>
                   </td>
                   <td >
-                      <button class="btn btn-danger" 
+                      <button class="boton" 
                     (click)="onEliminarExperience(experience.idExp)">
                           <i class="bi bi-trash-fill"></i> BORRAR</button>
                   </td>

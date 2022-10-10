@@ -22,10 +22,11 @@
      width: 60px;
      height: 50px;
      text-align: center;
-     background: rgba(0, 0, 0, 0.733);
+     /* background: rgba(0, 0, 0, 0.733); */
      border-radius: 50%;
      box-shadow: -0px 5px 10px rgba(219, 45, 161, 0.5);
      transition: all .3s ease-in-out;
+     background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
    
  }
  .button a:hover
@@ -38,28 +39,28 @@
  
  #facebook
  {
-     color:   #200ae2;
+     color:   #1b0ba5;
  
  }
   
   #instagram
  {
-     color:  #c32aa3 ;
+     color:  #ee34c6 ;
  }
  
  #twitter
  {
-     color: #1da1f2;
+     color: #3bdbf0;
  }
  
  #github
  {
       color:#f1f1f1;
  }
-#login
+/* #login
 {
-    color: aliceblue;
-}
+    color: rgb(7, 12, 17);
+} */
 
  
  .btn
