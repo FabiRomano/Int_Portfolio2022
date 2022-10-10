@@ -1,6 +1,8 @@
 a
 {
     color: aliceblue;
+  
+   
 }
 
 
@@ -8,6 +10,8 @@ a
 .nav-item
 {
     line-height: 60px;
+  
+    
 }
 
 .nav-toggle
@@ -18,6 +22,8 @@ a
     font-size: 30px;
     padding: 0 20px;
     line-height: 70px;
+  
+  
 
     /* display: none; */
 

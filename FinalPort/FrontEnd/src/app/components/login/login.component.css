@@ -13,7 +13,7 @@
     color: rgb(13, 32, 49);
 }
 
-.boton:hover
+/* .boton:hover
 {
     color: rgb(41, 60, 77);
     font-size: 20px;
@@ -23,7 +23,7 @@
     border-radius: 20%;
     transition: all .3s ease-in-out;
 
-}
+} */
 
 a{
     font-size: 30px;

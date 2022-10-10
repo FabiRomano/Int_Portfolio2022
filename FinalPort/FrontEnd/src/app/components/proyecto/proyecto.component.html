@@ -1,7 +1,7 @@
 <div class="row">
   <h1>Proyectos</h1>
   <div class="col-lg-2">
-      <button type="button" class="btn btn-dark" routerLink="/nuevosProyectos" >
+      <button type="button" class="boton" routerLink="/nuevosProyectos" >
           Agregar Proyectos
       </button>
   </div>
@@ -19,11 +19,11 @@
                   <td>{{proyec.inicioProyectos}}</td>
                   <td>{{proyec.finProyectos}}</td>
                    <td  > 
-                       <button class="btn btn-light" routerLink="/editarProyectos/{{proyec.idProyectos}}">
+                       <button class="boton" routerLink="/editarProyectos/{{proyec.idProyectos}}">
                           <i class="bi bi-pencil-fill"></i> EDITAR</button>
                    </td>
                    <td >
-                       <button class="btn btn-danger" (click)="onEliminarProyec (proyec.idProyectos)">
+                       <button class="boton" (click)="onEliminarProyec (proyec.idProyectos)">
                           <i class="bi bi-trash-fill"></i> BORRAR</button> 
                   </td> 
               </tr>

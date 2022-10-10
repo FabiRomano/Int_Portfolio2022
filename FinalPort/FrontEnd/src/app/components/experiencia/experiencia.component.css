@@ -1,14 +1,37 @@
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 .row{
-    padding: 20px;
+    padding: 60px;
+   
+    margin-left: 5%;
+   
 }
 
 
 h1, h5{
-    display: inline;
+  
     color: aliceblue;
+    font-family: cursive;
+ 
+    
 }
 
 td{
     color: aqua;
 }
+
+.table
+{
+   font-size: 20px; 
+   font-family: cursive;
+   background-color: #001e2d;
+   box-sizing: border-box;
+   overflow: hidden;
+   box-shadow: 0px 15px 50px #c5c5c5,
+                      -0px -15px 50px #c5c5c5;
+   border: 2px solid  #c5c5c5;
+
+   display: flex;
+   
+} */
 
