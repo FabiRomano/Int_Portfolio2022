@@ -1,30 +1,35 @@
 <div class="row">
   <h1>Proyectos</h1>
   <div class="col-lg-2">
-      <button type="button" class="boton" routerLink="/nuevosProyectos" >
-          Agregar Proyectos
-      </button>
+      <button type="button" class="boton" routerLink="/nuevosProyectos" *ngIf="isLogged">Agregar Proyectos</button>
   </div>
 
   <div class="col lg 1"></div>
   <div class="col-lg-11">
       <table class="table">
           <tbody>
+            <tr>
+                <td><h3>Nombre</h3></td>
+                <td><h3>Descripcion</h3> </td>
+                <td><h3>Inicio</h3></td>
+                <td><h3>Fecha de Fin</h3></td>
+               
+            </tr>
+
               <tr *ngFor="let proyec of proyects">
                
-                  <td>
-                      <h5>{{ proyec.nombreProyectos}}</h5>
-                  </td>
+                  <td>{{ proyec.nombreProyectos}}</td>
                   <td>{{proyec.descripcionProyectos}}</td>
                   <td>{{proyec.inicioProyectos}}</td>
                   <td>{{proyec.finProyectos}}</td>
-                   <td  > 
+                  
+                   <td > 
                        <button class="boton" routerLink="/editarProyectos/{{proyec.idProyectos}}">
-                          <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                          <i class="bi bi-pencil-fill"></i>Editar</button>
                    </td>
-                   <td >
+                   <td *ngIf="isLogged">
                        <button class="boton" (click)="onEliminarProyec (proyec.idProyectos)">
-                          <i class="bi bi-trash-fill"></i> BORRAR</button> 
+                          <i class="bi bi-trash-fill"></i>Eliminar</button> 
                   </td> 
               </tr>
           </tbody>

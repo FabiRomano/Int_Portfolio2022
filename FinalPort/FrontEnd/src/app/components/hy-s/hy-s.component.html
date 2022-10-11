@@ -2,7 +2,7 @@
 
   <h1>Hard & Soft skills</h1>
   <div class="col-lg-2">
-      <button type="button" routerLink="/nuevaHys" class="boton" >Nueva Skill</button>
+      <button type="button" routerLink="/nuevaHys" class="boton" ><h6>Nueva Skill</h6></button>
   </div>
 
   <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skills">
@@ -29,12 +29,12 @@
 
       <div>
         <td >
-            <button class="boton" routerLink="/editarHys/{{skill.idSkills}}">>
-                <i class="bi bi-pencil-fill"></i></button>
+            <button class="boton" routerLink="/editarHys/{{skill.idSkills}}">
+                <i class="bi bi-pencil-fill"></i><h6>Editar</h6></button>
         </td>
         <td >
-            <button class="boton" (click)="onEliminarSkills(skill.idSkills)">>
-                <i class="bi bi-trash-fill"></i></button>
+            <button class="boton" (click)="onEliminarSkills(skill.idSkills)">
+                <i class="bi bi-trash-fill"></i><h6>Eliminar</h6></button>
         </td>
 
     </div>
