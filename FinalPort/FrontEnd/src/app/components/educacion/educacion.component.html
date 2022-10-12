@@ -1,11 +1,11 @@
 <div class="row">
   <h1>Educacion</h1>
   <div class="col-lg-2">
-      <button type="button" class="boton" routerLink="/nuevaEducacion" *ngIf="isLogged">Agregar Educacion</button>
+      <button type="button" class="boton" routerLink="/nuevaEducacion" >Agregar Educacion</button>
   </div>
 
   <div class="col lg 1"></div>
-  <div class="col-lg-11">
+  <div class="col-lg-12">
       <table class="table">
           <tbody>
             <tr>
@@ -20,15 +20,12 @@
                   <td>{{ education.certificadoEdu}}</td>
                   <td>{{ education.fechaInicioEdu}}</td>
                   <td>{{ education.fechaFinEdu}}</td>
-
-
-
-                  <td *ngIf="isLogged">
-                      <button class="boton" routerLink="/editarEducacion/{{education.idEdu}}">
+              <td >
+                      <button class="bot-editar" routerLink="/editarEducacion/{{education.idEdu}}">
                           <i class="bi bi-pencil-fill"></i>Editar</button>
                   </td>
-                  <td *ngIf="isLogged">
-                      <button class="boton" (click)="onEliminarEducation (education.idEdu)">
+                  <td >
+                      <button class="bot-editar" (click)="onEliminarEducation (education.idEdu)">
                           <i class="bi bi-trash-fill"></i>Eliminar</button>
                   </td>
               </tr>
@@ -39,5 +36,8 @@
 
 </div>
 
+
+
+    
 
 

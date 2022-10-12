@@ -1,23 +1,19 @@
 <div class="row">
   <h1>Experiencia laboral</h1>
   <div class="col-lg-2">
-      <button type="button" class="boton" routerLink="/nuevaExperiencia" *ngIf="isLogged" >
-          Nueva Experiencia
-      </button>
-  </div>
+      <button type="button" class="boton" routerLink="/nuevaExperiencia"  > Nueva Experiencia</button>
+</div>
 
   <div class="col lg 1"></div>
-  <div class="col-lg-11">
+  <div class="col-lg-12">
       <table class="table">
-       
-
-          <tbody> <tr>
+           <tbody> 
+            <tr>
             <td><h3>Empresa</h3></td>
             <td><h3>Descripcion</h3></td>
             <td><h3>Fecha de Inicio</h3></td>
             <td><h3>fecha de Fin</h3> </td>
-          
-           
+             
         </tr>
               <tr *ngFor="let experience of experiences">
                   <td>{{experience.empresaExp}} </td>
@@ -25,15 +21,14 @@
                    <td>{{experience.fechaInicioExp}}</td>
                    <td>{{experience.fechaFinExp}}</td>    
                  
-                 
-                  <td *ngIf="isLogged" >
-       
-                      <button class="boton"  
+                  <td  >
+                    
+                      <button class="bot-editar"  
                       routerLink="/editarExperiencia/{{experience.idExp}}">
                           <i class="bi bi-pencil-fill"></i> Editar</button>
                   </td>
-                  <td *ngIf="isLogged" >
-                      <button class="boton" 
+                  <td  >
+                      <button class="bot-editar" 
                     (click)="onEliminarExperience(experience.idExp)">
                           <i class="bi bi-trash-fill"></i> Eliminar</button>
                   </td>
@@ -43,3 +38,8 @@
   </div>
 
 </div>
+
+
+      
+        
+    

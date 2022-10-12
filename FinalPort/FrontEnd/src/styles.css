@@ -6,6 +6,41 @@
     background-attachment: fixed;
 }
 
+.row{
+  padding: 80px;
+ 
+  margin-left: 10%;
+ 
+}
+
+.table
+{
+  
+   font-size: 20px; 
+   font-family: cursive;
+   box-sizing: border-box;
+   overflow: hidden;
+   box-shadow: 0px 15px 50px #c5c5c5,
+                      -0px -15px 50px #c5c5c5;
+   border: 2px solid  #c5c5c5;
+   padding: 3%;
+   display: flex;
+   border-radius: 25px;
+  
+   
+}
+
+
+
+td{
+  
+  color: white;
+  text-align: center;
+  
+}
+
+
+
 
 
 h1 , h5, h3{
@@ -15,26 +50,58 @@ h1 , h5, h3{
   background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
   border-radius: 10px;
   color: aliceblue;
+  border: solid 1px aqua;
+ 
+  
 }
 
+/* estilo para botones frente */
+
+.bot-editar
+{
+  border: solid 7px #ad0597;
+ 
+  padding: 5px 15px;
+  transition: border 1s;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+  margin: 10px;
+  font-size: 20px;
+  font-family: cursive;
+  color:aqua;
+}
+
+
+.bot-editar:hover {
+ 
+  border:5px solid aqua;
+  color: #c5c5c5;
+}
+
+
+
+
+/* componenet nuevos o editar */
 
 .inicio{
   width: 100%;
   height: 100vh;
   display: flex;
-  font-family: "Raleway", sans-serif;
+  font-family: cursive;
   align-items: center;
-  font-size: 15px;
+  font-size: 25px;
   text-align:center;
 
 
 }
 .container{
     max-width: 60vw;
-    box-shadow: 15px 15px 20px #c5c5c5,
-                -15px -15px 20px #c5c5c5;
+    box-shadow: 15px 15px 25px #ce1fe6ad,
+                -15px -15px 25px #ce1fe6ad;
     overflow: hidden;
     border-radius: 25px;
+    border: solid 1px #000;
 }
 
 .tarjeta{
@@ -45,19 +112,24 @@ h1 , h5, h3{
 }
 .boton {
  
-  border:3px solid #b10987;
+  border:7px solid #b10987;
+  color: pink;
   padding: 5px 15px;
+  transition: border 1s;
   position: relative;
   overflow: hidden;
   transition: color 1s;
   margin: 10px;
+  font-size: 20px;
+  font-family: cursive;
+ 
  
 }
 
 
 .boton:hover {
-    
-    color:#fff;
+    border: solid 7px #ad0597;
+    color:aqua;
 }
 
 
@@ -86,34 +158,10 @@ h1 , h5, h3{
 
   
 
-.row{
-    padding: 60px;
-   
-    margin-left: 5%;
-   
-}
 
 
-td{
-    color: aqua;
-    text-align: center;
-}
 
-.table
-{
-  
-   font-size: 20px; 
-   font-family: cursive;
-   box-sizing: border-box;
-   overflow: hidden;
-   box-shadow: 0px 15px 50px #c5c5c5,
-                      -0px -15px 50px #c5c5c5;
-   border: 2px solid  #c5c5c5;
-   padding: 10%;
-   display: flex;
-   border-radius: 25px;
-  
-   
-}
+
+
 
 

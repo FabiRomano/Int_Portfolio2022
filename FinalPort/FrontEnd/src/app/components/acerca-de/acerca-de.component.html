@@ -1,26 +1,28 @@
-<div  class="row"  *ngIf="persona">
-    <div class="img">
-         <img  src= "{{persona.fotoPerfil}}" class="img-fluid" alt="Imagen de perfil" id="fotoperfil">
+ <div class="row" *ngIf="persona">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <img src= "{{persona.fotoPerfil}}" class="img-fluid" alt="Imagen de perfil" id="fotoperfil">
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <h2 id="nombre">{{persona.nombre}} {{persona.apellido}}</h2>
+            <p> {{persona.titulo}}</p>
+        </div>
+
       
-    </div>
-        <div class="titulo" >
-           {{persona.nombre +" "  + persona.apellido }} <br> <br>{{persona.titulo}}
-        <!-- <h6 id="titulo">{{persona.titulo}}</h6> -->
-       </div> 
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <span>
+                <h1>Acerca de mí</h1>
+                <h4> {{persona.descripcion}}</h4>
 
-        <div class="descrip"> {{persona.descripcion}}  </div>
-
-            <div class="btncontrol">
-                <a
-                  routerLink="/editarAcercaDe/{{ persona.id }}"
-                  class="btnm"
-                  ><i class="fa fa-pencil" routerLink="/home"></i
-                ></a>
-              </div>
-          
-      
-
-</div>
+                  <div class="pencil" >
+          <a
+            routerLink="/editarAcercaDe/{{ persona.id }}"
+            class="btnm"
+            ><i class="fa fa-pencil" routerLink="/home"></i
+          ></a>
+        </div>
+            </span>
+        </div>
+    </div> 
 
 
 

@@ -6,7 +6,8 @@
     position: absolute;
     background-color: transparent;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem;
+    
     right: 5px;
     top: 100px;
     /* position: fixed; */
@@ -28,6 +29,7 @@
      box-shadow: -0px 5px 10px rgba(219, 45, 161, 0.5);
      transition: all .3s ease-in-out;
      background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
+     
     
    
  }

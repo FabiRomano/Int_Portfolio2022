@@ -1,9 +1,16 @@
-
-    
-img{
+   
+ img{
     width: 110%;
     height: 500px;
     margin-top: 10px;
 
    
-}
+} 
+
+/* *{
+    
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-degradado-circulos-futuristas_23-2149117431.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+} */
