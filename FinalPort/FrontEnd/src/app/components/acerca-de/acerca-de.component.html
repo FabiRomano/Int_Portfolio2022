@@ -1,28 +1,64 @@
- <div class="row" *ngIf="persona">
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <img src= "{{persona.fotoPerfil}}" class="img-fluid" alt="Imagen de perfil" id="fotoperfil">
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <h2 id="nombre">{{persona.nombre}} {{persona.apellido}}</h2>
-            <p> {{persona.titulo}}</p>
-        </div>
+<div class="row" *ngIf="persona">
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <img
+      src="{{ persona.fotoPerfil }}"
+      class="img-fluid"
+      alt="Imagen de perfil"
+      id="fotoperfil"
+    />
+  </div>
 
-      
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <span>
-                <h1>Acerca de mí</h1>
-                <h4> {{persona.descripcion}}</h4>
+ 
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <h2 id="nombre">{{ persona.nombre }} {{ persona.apellido }}</h2>
+    <p>{{ persona.titulo }}</p>
+  </div>
 
-                  <div class="pencil" >
-          <a
-            routerLink="/editarAcercaDe/{{ persona.id }}"
-            class="btnm"
-            ><i class="fa fa-pencil" routerLink="/home"></i
-          ></a>
-        </div>
-            </span>
-        </div>
-    </div> 
+  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <span>
+      <h1>Acerca de mí</h1>
+      <h4>{{ persona.descripcion }}</h4>
 
+      <div class="pencil">
+        <a routerLink="/editarAcercaDe/{{ persona.id }}" class="btnm"
+          ><i class="fa fa-pencil" routerLink="/home"></i
+        ></a>
+      </div>
+    </span>
+   
+  </div>
 
-
+  <div class="bubles">
+    <span style="--1: 11"></span>
+    <span style="--1: 12"></span>
+    <span style="--1: 24"></span>
+    <span style="--1: 10"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 23"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 16"></span>
+    <span style="--1: 19"></span>
+    <span style="--1:20;"></span>
+    <span style="--1:22;"></span>
+    <span style="--1:25;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:15;"></span>
+    <span style="--1:13;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:11;"></span>
+    <span style="--1:12;"></span>
+    <span style="--1:24;"></span>
+    <span style="--1:10;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:23;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:16;"></span>
+    <span style="--1:19;"></span>
+    <span style="--1:20;"></span>
+    <span style="--1:22;"></span>
+  </div>
+</div>

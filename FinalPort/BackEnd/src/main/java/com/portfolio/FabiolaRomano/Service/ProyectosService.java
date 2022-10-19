@@ -26,7 +26,7 @@ public class ProyectosService {
     
         return proyectosRepo.save(proyectos);
     }
-    
+   
     public List<Proyectos> traerProyectos(){
     
         return proyectosRepo.findAll();

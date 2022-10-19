@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 *{
-    background-image: url(https://img.freepik.com/free-vector/blue-abstract-hud-technology-background_52683-21342.jpg?w=2000);
+    background-image: url(https://i.ibb.co/s6zLGST/banner.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -23,9 +23,11 @@
    box-shadow: 0px 15px 50px #c5c5c5,
                       -0px -15px 50px #c5c5c5;
    border: 2px solid  #c5c5c5;
-   padding: 3%;
+   padding: 5%;
    display: flex;
    border-radius: 25px;
+   margin-top: 30px;
+
   
    
 }
@@ -43,7 +45,7 @@ td{
 
 
 
-h1 , h5, h3{
+h1 , h5{
   text-align: center;
   font-family: cursive;
   border: solid 3px ;
@@ -51,9 +53,14 @@ h1 , h5, h3{
   border-radius: 10px;
   color: aliceblue;
   border: solid 1px aqua;
+  padding: 20px;
+  
  
   
 }
+
+
+
 
 /* estilo para botones frente */
 
@@ -70,13 +77,14 @@ h1 , h5, h3{
   font-size: 20px;
   font-family: cursive;
   color:aqua;
+  border-radius: 5px;
 }
 
 
 .bot-editar:hover {
  
   border:5px solid aqua;
-  color: #c5c5c5;
+  color: #ad0597;
 }
 
 
@@ -101,7 +109,7 @@ h1 , h5, h3{
                 -15px -15px 25px #ce1fe6ad;
     overflow: hidden;
     border-radius: 25px;
-    border: solid 1px #000;
+    border: solid 1px red;
 }
 
 .tarjeta{
@@ -112,8 +120,8 @@ h1 , h5, h3{
 }
 .boton {
  
-  border:7px solid #b10987;
-  color: pink;
+  border:7px solid rgb(223, 63, 116);
+  color: aqua;
   padding: 5px 15px;
   transition: border 1s;
   position: relative;
@@ -122,14 +130,15 @@ h1 , h5, h3{
   margin: 10px;
   font-size: 20px;
   font-family: cursive;
+  border-radius: 10px;
  
  
 }
 
 
 .boton:hover {
-    border: solid 7px #ad0597;
-    color:aqua;
+    border: solid 7px aqua;
+    color: rgb(223, 63, 116);
 }
 
 
@@ -155,8 +164,75 @@ h1 , h5, h3{
   }
 
 
+  @media screen and (max-width: 600px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+  }
 
-  
+
+     
+.bubles{
+  position: relative;
+  display: flex;
+}
+
+
+.bubles span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0.4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #4fc3dc,
+  0 0  100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--1));
+}
+
+.bubles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  0 0  100px #ff2d75;
+}
+
+@keyframes animate {
+  0%
+  {
+      transform: translateY(100vh) scale(0);
+
+  }
+
+  100%
+  {
+      transform: translateY(10vh) scale(1);
+      
+  }
+}
+
 
 
 

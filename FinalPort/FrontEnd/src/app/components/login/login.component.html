@@ -1,28 +1,99 @@
 <div class="min-vh-100 container-fuild">
   <div class="tarjeta">
-      <div class="row">
-        <div class="texto">
-            <h2>Bienvenidos a mi Portfolio</h2><br>
-         <h3>Inicia sesion para realizar cambios</h3>
-       
-        
-          <div class="col-md-12 col-lg-12  centrarForm ">
-              <div class="login">
-                  <div class="centrar">
-                    
-                      <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
-                          <label class="form-label" for="email">Email</label>
-                          <input type="email" id="email" name="email" class="form-control form-control-lg" [(ngModel)]="email" required/>
-                          <label class="form-label" for="password">Password</label>
-                          <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required/>   
-                          <button class="boton" type="submit" routerLink="/home">Iniciar sesion</button> 
-                        <a routerLink="/home" class="boton">  Entrar como Visitante</a>
-                  
-                      </form>
-                    </div>
-                  </div>
+    <div class="row">
+      <div class="texto">
+        <h2>Bienvenidos a mi Portfolio</h2>
+        <br />
+        <h3>Inicia sesion para realizar cambios</h3>
+
+        <div class="col-md-12 col-lg-12 centrarForm">
+          <div class="login">
+            <div class="centrar">
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <label class="form-label" for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control form-control-lg"
+                  [(ngModel)]="email"
+                  required
+                />
+                
+                <label class="form-label" for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control form-control-lg"
+                  [(ngModel)]="password"
+                  required
+                />
+                <div class="bubles">
+                  <span style="--1:11;"></span>
+                  <span style="--1:12;"></span>
+                  <span style="--1:24;"></span>
+                  <span style="--1:10;"></span>
+                  <span style="--1:14;"></span>
+                  <span style="--1:23;"></span>
+                  <span style="--1:18;"></span>
+                  <span style="--1:16;"></span>
+                  <span style="--1:19;"></span>
+                  <span style="--1:20;"></span>
+                  <span style="--1:22;"></span>
+                  <span style="--1:25;"></span>
+                  <span style="--1:18;"></span>
+                  <span style="--1:21;"></span>
+                  <span style="--1:15;"></span>
+                  <span style="--1:13;"></span>
+                  <span style="--1:26;"></span>
+                  <span style="--1:17;"></span>
+                  <span style="--1:21;"></span>
+                  <span style="--1:14;"></span>
+                  <span style="--1:11;"></span>
+                  <span style="--1:12;"></span>
+                  <span style="--1:24;"></span>
+                  <span style="--1:10;"></span>
+                  <span style="--1:14;"></span>
+                  <span style="--1:23;"></span>
+                  <span style="--1:18;"></span>
+                  <span style="--1:16;"></span>
+                  <span style="--1:19;"></span>
+                  <span style="--1:20;"></span>
+                  <span style="--1:22;"></span>
+                  <span style="--1:25;"></span>
+                  <span style="--1:18;"></span>
+                  <span style="--1:21;"></span>
+                  <span style="--1:15;"></span>
+                  <span style="--1:13;"></span>
+                  <span style="--1:26;"></span>
+                  <span style="--1:17;"></span>
+                  <span style="--1:21;"></span>
+                  <span style="--1:14;"></span>
+                  <span style="--1:26;"></span>
+                  <span style="--1:17;"></span>
+                  <span style="--1:21;"></span>
+                  <span style="--1:14;"></span>
+                  <span style="--1:26;"></span>
+                  <span style="--1:17;"></span>
+                  <span style="--1:21;"></span>
+                  <span style="--1:14;"></span>
+              
               </div>
+                <button class="boton" type="submit" routerLink="/home">
+                  Iniciar sesion
+                </button>
+                <a routerLink="/home" class="boton"> Entrar como Visitante</a>
+              </form>
+
+              
+              
+            </div>
           </div>
+        </div>
       </div>
+    </div>
   </div>
+
+  
 </div>

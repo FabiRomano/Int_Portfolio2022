@@ -1,49 +1,104 @@
 <div class="row">
-
   <h1>Hard & Soft skills</h1>
   <div class="col-lg-2">
-      <button type="button" routerLink="/nuevaHys" class="boton" ><h6>Nueva Skill</h6></button>
+    <button type="button" routerLink="/nuevaHys" class="boton">
+      <h6>Nueva Skill</h6>
+    </button>
   </div>
 
-  <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skills">
-
- 
-      <circle-progress 
-      [percent]="(skill.porcentajeSkills)" 
-      [radius]="90" [imageSrc]="(skill.fotoSkills)" 
-      [title]="(skill.nombreSkills)"
+  <div
+    class="text-center col-sm-4 col-md-4 col-lg-4 circulo"
+    *ngFor="let skill of skills"
+  >
+    <circle-progress
+      [percent]="skill.porcentajeSkills"
+      [radius]="90"
+      [imageSrc]="skill.fotoSkills"
+      [title]="skill.nombreSkills"
       [titleColor]="'#00FFFF'"
-      [showTitle]="true" 
-      [showImage]="true" 
-      [imageHeight]="70" 
-      [imageWidth]="70" 
+      [showTitle]="true"
+      [showImage]="true"
+      [imageHeight]="70"
+      [imageWidth]="70"
       [showUnits]="false"
-      [showSubtitle]="false" 
-      [outerStrokeWidth]="10" 
-      [innerStrokeWidth]="2" 
+      [showSubtitle]="false"
+      [outerStrokeWidth]="10"
+      [innerStrokeWidth]="2"
       [outerStrokeColor]="'#00FFFF'"
-      [innerStrokeColor]="'#FF00FF'" 
-      [animation]="true" 
-      [animationDuration]="600">
-      </circle-progress>
+      [innerStrokeColor]="'#FF00FF'"
+      [animation]="true"
+      [animationDuration]="600"
+    >
+    </circle-progress>
 
-      <div>
-        <td >
-            <button class="boton" routerLink="/editarHys/{{skill.idSkills}}">
-                <i class="bi bi-pencil-fill"></i><h6>Editar</h6></button>
-        </td>
-        <td >
-            <button class="boton" (click)="onEliminarSkills(skill.idSkills)">
-                <i class="bi bi-trash-fill"></i><h6>Eliminar</h6></button>
-        </td>
+    <div>
+      <td>
+        <button class="bot-editar" routerLink="/editarHys/{{ skill.idSkills }}">
+          <i class="bi bi-pencil-fill"></i>
+          <h6>Editar</h6>
+        </button>
+      </td>
+      <td>
+        <button class="bot-editar" (click)="onEliminarSkills(skill.idSkills)">
+          <i class="bi bi-trash-fill"></i>
+          <h6>Eliminar</h6>
+        </button>
+      </td>
 
-    </div>
-   
       
+    </div>
   </div>
+
+  
+  <div class="bubles">
+    <span style="--1:11;"></span>
+    <span style="--1:12;"></span>
+    <span style="--1:24;"></span>
+    <span style="--1:10;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:23;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:16;"></span>
+    <span style="--1:19;"></span>
+    <span style="--1:20;"></span>
+    <span style="--1:22;"></span>
+    <span style="--1:25;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:15;"></span>
+    <span style="--1:13;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:11;"></span>
+    <span style="--1:12;"></span>
+    <span style="--1:24;"></span>
+    <span style="--1:10;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:23;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:16;"></span>
+    <span style="--1:19;"></span>
+    <span style="--1:20;"></span>
+    <span style="--1:22;"></span>
+    <span style="--1:25;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:15;"></span>
+    <span style="--1:13;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+
 </div>
-
-
-
-
-
+</div>

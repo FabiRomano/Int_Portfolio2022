@@ -1,31 +1,82 @@
-a
-{
-    color: aliceblue;
-    font-size: 20px;
-    font-family: cursive;
-     
+
+.respmenu a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  /* border-bottom: 2px solid #456789; */
+  max-width: 200px;
+  background: transparent;
+  /* font-variant: small-caps; */
+  text-shadow: 1px 1px black;
+  justify-content: center;
+  font-family: cursive;
+  /* border: solid 1px #ddd; */
+  color: aliceblue;
+  
+}
+
+.respmenu a:hover{
+  color: darkviolet;
+  transition: all 0.3s ease-in-out;
 }
 
 
+.respmenu input[type="checkbox"],
+.respmenu .fa-bars,
+.respmenu .fa-times {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
 
-.nav-item
-{
-    line-height: 60px;
-  
-    
 }
 
-.nav-toggle
-{
-    color: white;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 70px;
+.respmenu .fa-bars,
+.respmenu .fa-times {
+  position: absolute;
+  font-size: 48px;
+  pointer-events: none;
   
+}
+
+.respmenu input[type="checkbox"] {
+  opacity: 0;
   
+}
 
-    /* display: none; */
+.respmenu {
+  color: white;
+  position: relative;
+  /* background: #123456; */
+  min-height: 4rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  
+}
 
+
+.respmenu nav {
+  display: none;
+  
+}
+
+.respmenu input:checked ~ nav {
+  display: block;
+}
+
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
+ul {
+  list-style: none;
 }

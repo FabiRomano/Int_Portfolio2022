@@ -1,5 +1,5 @@
-
-/* app-social{
+/* 
+app-social{
     float: right;
     margin-top: 10px;
     border-radius: 5px;
@@ -9,4 +9,5 @@
 .menu{
     display: flex;
     justify-content: space-between;
+  
 }
