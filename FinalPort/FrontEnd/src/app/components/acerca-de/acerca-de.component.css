@@ -11,25 +11,54 @@ div{
     font-size: 25px;
     font-family: cursive;
     color: aliceblue;
+    
 }
+
+span{
+    position: relative;
+    top: 80px;
+    
+} 
 
 .pencil{
     
-    box-shadow: 0px 15px 30px #c5c5c5,
-    -0px -15px 30px aqua;
-    border: 1px solid aqua;
-    
+    box-shadow: 10px -10px 30px #d31ed3,
+    10px -10px 50px aqua;
+
+     position: relative;
+     right: 100px;
+
+     bottom: 200px;
+     width: 60px;
+     height: 60px;
+     background:transparent;
+    border: aqua 1px solid;
+    border-radius: 50%;
+}
+
+@media (max-width:575px) {
+    .pencil {
+      position: absolute;
+      bottom: 470px;
+      right: 10px;
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      
+    }
 }
 
 
-
 a{
-    color: aqua;
+    position: relative;
+    top: 8px;
+    color:  #b10987;
+    
 }
 
 a:hover
 {
-    color: rgb(63, 224, 63);
+    color: aqua;
 }
 
 
@@ -39,6 +68,7 @@ h4{
     -0px -15px 30px #c5c5c5;
     border: 1px solid rgb(26, 24, 24);
     padding: 5%;
+    
    
    
 }
@@ -51,7 +81,7 @@ h4{
     width: 200px;
     border-radius: 50%;
     left: 70px;;
-    top: 400px;
+    top: 480px;
     box-shadow: -10px -5px 10px #c5c5c55b;
     border:1px solid #b10987;
     
@@ -80,7 +110,7 @@ h4{
     font-size: 35px;
     position: relative;
     left: 2px;
-    bottom: 180px;
+    /* bottom: 180px; */
     background: transparent;
     
     /* margin-top: 5px; */
@@ -92,9 +122,11 @@ h4{
 @media (max-width:575px) {
     #nombre{
         position: relative;
-        bottom: 20px;
+        /* bottom: 20px; */
+        top: 60px;
         left: 5px;
         border:1px solid #b10987;
+        font-size: 20px;
          }
     }
 
@@ -104,7 +136,8 @@ p{
     font-weight: bold;
     /* margin-top: 5px; */
     position: relative;
-    bottom: 140px ;
+    /* bottom: 140px ; */
+    top: 50px;
     right: 200px; 
     background: transparent;
     border: solid 1px aqua;
@@ -118,6 +151,10 @@ p{
     p{
         position: relative;
         left: 5px;
+        align-items: stretch;
+        font-size: 20px;
+        margin-top: 40px;
+        
        
          }
     }

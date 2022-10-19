@@ -195,6 +195,7 @@ h1 , h5{
 .bubles{
   position: relative;
   display: flex;
+  background: transparent;
 }
 
 
