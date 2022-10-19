@@ -1,35 +1,96 @@
 <div class="row">
   <h1>Educacion</h1>
   <div class="col-lg-2">
-      <button type="button" class="boton" routerLink="/nuevaEducacion" >
-          Agregar Educacion
-      </button>
+      <button type="button" class="boton" routerLink="/nuevaEducacion" >Agregar Educacion</button>
   </div>
+
 
   <div class="col lg 1"></div>
   <div class="col-lg-11">
       <table class="table">
           <tbody>
+            <!-- <tr>
+                <td><h3>Establecimiento</h3></td>
+                <td><h3>Titulo</h3></td>
+                <td><h3>Inicio</h3></td>
+                <td><h3>Fin</h3> </td>
+            </tr> -->
               <tr *ngFor="let education of educations">
-                  <td>
-                      <h5>{{ education.establecimientoEdu}}</h5>
-                  </td>
+                 
+                  <td> {{ education.establecimientoEdu}}</td>
                   <td>{{ education.certificadoEdu}}</td>
-                  <!-- <td *ngIf="isLogged"> -->
-                      <button class="boton" routerLink="/editarEducacion/{{education.idEdu}}">
-                          <i class="bi bi-pencil-fill"></i> Editar</button>
-                  <!-- </td> -->
-                  <!-- <td *ngIf="isLogged"> -->
-                      <button class="boton" (click)="onEliminarEducation (education.idEdu)">
-                          <i class="bi bi-trash-fill"></i> Borrar</button>
-                  <!-- </td> -->
+                  <td>{{ education.fechaInicioEdu}}</td>
+                  <td>{{ education.fechaFinEdu}}</td>
+              <td >
+                      <button class="bot-editar" routerLink="/editarEducacion/{{education.idEdu}}">
+                          <i class="bi bi-pencil-fill"></i>Editar</button>
+                  </td>
+                  <td >
+                      <button class="bot-editar" (click)="onEliminarEducation (education.idEdu)">
+                          <i class="bi bi-trash-fill"></i>Eliminar</button>
+                  </td>
               </tr>
              
           </tbody>
       </table>
-  </div>
+ </div>
+
+ <div class="bubles">
+    <span style="--1:11;"></span>
+    <span style="--1:12;"></span>
+    <span style="--1:24;"></span>
+    <span style="--1:10;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:23;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:16;"></span>
+    <span style="--1:19;"></span>
+    <span style="--1:20;"></span>
+    <span style="--1:22;"></span>
+    <span style="--1:25;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:15;"></span>
+    <span style="--1:13;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:11;"></span>
+    <span style="--1:12;"></span>
+    <span style="--1:24;"></span>
+    <span style="--1:10;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:23;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:16;"></span>
+    <span style="--1:19;"></span>
+    <span style="--1:20;"></span>
+    <span style="--1:22;"></span>
+    <span style="--1:25;"></span>
+    <span style="--1:18;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:15;"></span>
+    <span style="--1:13;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+    <span style="--1:26;"></span>
+    <span style="--1:17;"></span>
+    <span style="--1:21;"></span>
+    <span style="--1:14;"></span>
+    
 
 </div>
+</div>
 
+
+
+    
 
 

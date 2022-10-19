@@ -1,91 +1,77 @@
-*{background: transparent;}
-
- 
- .redesMenu{
-    display: flex;
-    position: absolute;
-    background-color: transparent;
-    flex-direction: column;
-    padding: 1rem;
-    right: 5px;
-    top: 100px;
-    /* position: fixed; */
-    margin-right: 10px;
-    
+* {
+  background: transparent;
 }
 
+.redesMenu {
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+  padding: 3rem;
+  left: 35%;
 
-  .button a
- {
-     text-decoration: none;
-     font-size: 35px;
-     width: 60px;
-     height: 50px;
-     text-align: center;
-     /* background: rgba(0, 0, 0, 0.733); */
-     border-radius: 50%;
-     box-shadow: -0px 5px 10px rgba(219, 45, 161, 0.5);
-     transition: all .3s ease-in-out;
-     background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
-   
- }
- .button a:hover
- {
-     transform: scale(1.50);
-   
- }  
- 
- 
- 
- #facebook
- {
-     color:   #1b0ba5;
- 
- }
-  
-  #instagram
- {
-     color:  #ee34c6 ;
- }
- 
- #twitter
- {
-     color: #3bdbf0;
- }
- 
- #github
- {
-      color:#f1f1f1;
- }
+  margin-right: 10px;
+}
+
+a {
+  margin-top: 1rem;
+}
+.button a {
+  text-decoration: none;
+  font-size: 35px;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.733);
+  border-radius: 50%;
+  box-shadow: -0px 5px 10px rgba(219, 45, 161, 0.5);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
+  margin: 0.5em;
+  align-items: stretch;
+  flex-direction: row-reverse;
+}
+.button a:hover {
+  transform: scale(1.5);
+}
+
+#facebook {
+  color: #fff;
+}
+
+#instagram {
+  color: #ee34c6;
+}
+
+#twitter {
+  color: #3bdbf0;
+}
+
+#github {
+  color: #0a0a0a;
+}
 /* #login
 {
     color: rgb(7, 12, 17);
 } */
 
- 
- .btn
- 
- {
-     border-width:medium;
-     border-radius: 30px;
- }
-  
- 
- 
-  /*---para la vista de celular ---*/
-  
-  @media (max-width: 575px){
-     .container{
-         flex-direction: column;
-     
-     }
-     
-     .button{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-     }
-     .button a{
-         margin: 0.3em;
-     }
- }
+.btn {
+  border-width: medium;
+  border-radius: 30px;
+}
+
+/*---para la vista de celular ---*/
+
+@media (max-width: 575px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button a {
+    margin: 0.5em;
+  }
+}

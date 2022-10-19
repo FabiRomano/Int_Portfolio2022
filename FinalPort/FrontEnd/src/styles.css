@@ -1,41 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 *{
-    background-image: url(https://img.freepik.com/free-vector/blue-abstract-hud-technology-background_52683-21342.jpg?w=2000);
+    background-image: url(https://i.ibb.co/s6zLGST/banner.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.row{
+  padding: 80px;
+ 
+  margin-left: 10%;
+ 
+}
+
+.table
+{
+  
+   font-size: 20px; 
+   font-family: cursive;
+   box-sizing: border-box;
+   overflow: hidden;
+   box-shadow: 0px 15px 50px #c5c5c5,
+                      -0px -15px 50px #c5c5c5;
+   border: 2px solid  #c5c5c5;
+   padding: 5%;
+   display: flex;
+   border-radius: 25px;
+   margin-top: 30px;
+
+  
+   
+}
+
+
+
+td{
+  
+  color: white;
+  text-align: center;
+  
+}
+
+
 
 
 
 h1 , h5{
   text-align: center;
   font-family: cursive;
-  border: solid 1px ;
+  border: solid 3px ;
   background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
   border-radius: 10px;
   color: aliceblue;
+  border: solid 1px aqua;
+  padding: 20px;
+  
+ 
+  
 }
 
 
+
+
+/* estilo para botones frente */
+
+.bot-editar
+{
+  border: solid 7px #ad0597;
+ 
+  padding: 5px 15px;
+  transition: border 1s;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+  margin: 10px;
+  font-size: 20px;
+  font-family: cursive;
+  color:aqua;
+  border-radius: 5px;
+}
+
+
+.bot-editar:hover {
+ 
+  border:5px solid aqua;
+  color: #ad0597;
+}
+
+
+
+
+/* componenet nuevos o editar */
 
 .inicio{
   width: 100%;
   height: 100vh;
   display: flex;
-  font-family: "Raleway", sans-serif;
+  font-family: cursive;
   align-items: center;
- font-size: 15px;
+  font-size: 25px;
   text-align:center;
-  background-color:#e8e8e8;
-  color: rgb(29, 35, 41);
+
 
 }
 .container{
     max-width: 60vw;
-    box-shadow: 15px 15px 20px #c5c5c5,
-                -15px -15px 20px #c5c5c5;
+    box-shadow: 15px 15px 25px #ce1fe6ad,
+                -15px -15px 25px #ce1fe6ad;
     overflow: hidden;
+    border-radius: 25px;
+    border: solid 1px red;
 }
 
 .tarjeta{
@@ -46,18 +120,28 @@ h1 , h5{
 }
 .boton {
  
-  border:3px solid #b10987;
+  border:7px solid rgb(223, 63, 116);
+  color: aqua;
   padding: 5px 15px;
+  transition: border 1s;
   position: relative;
   overflow: hidden;
   transition: color 1s;
   margin: 10px;
+  font-size: 20px;
+  font-family: cursive;
+  border-radius: 10px;
+ 
  
 }
+
+
 .boton:hover {
-    background-color: #b10987;
-    color:#fff;
+    border: solid 7px aqua;
+    color: rgb(223, 63, 116);
 }
+
+
   .tarjeta form input{
 
     text-align: center;
@@ -65,9 +149,9 @@ h1 , h5{
     border-left: none;
     border-right: none;
     border-radius: 0;
-    border-bottom: 2px solid rgba(83, 83, 83, 0.342);
     margin-bottom: 10px;
   }
+
   .tarjeta form label{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -80,37 +164,81 @@ h1 , h5{
   }
 
 
+  @media screen and (max-width: 600px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+  }
 
-  
 
-.row{
-    padding: 60px;
-   
-    margin-left: 5%;
-   
+     
+.bubles{
+  position: relative;
+  display: flex;
+  background: transparent;
 }
 
 
-td{
-    color: aqua;
-    text-align: center;
+.bubles span{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0.4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #4fc3dc,
+  0 0  100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--1));
 }
 
-.table
-{
-  
-   font-size: 20px; 
-   font-family: cursive;
-   background-color: #001e2d;
-   box-sizing: border-box;
-   overflow: hidden;
-   box-shadow: 0px 15px 50px #c5c5c5,
-                      -0px -15px 50px #c5c5c5;
-   border: 2px solid  #c5c5c5;
-   padding: 10%;
-   display: flex;
-  
-   
+.bubles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  0 0  100px #ff2d75;
 }
+
+@keyframes animate {
+  0%
+  {
+      transform: translateY(100vh) scale(0);
+
+  }
+
+  100%
+  {
+      transform: translateY(10vh) scale(1);
+      
+  }
+}
+
+
+
+
+
+
+
 
 
