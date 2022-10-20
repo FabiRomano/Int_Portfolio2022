@@ -1,10 +1,6 @@
-.conta{
-     
-    /* margin: 0;
-    padding: 90%; */
-    box-sizing: content-box; 
-  
-}
+*{background:transparent}
+
+
 
  #logoAP{
      width: 140px;
@@ -14,6 +10,13 @@
      /* bottom: 120px;
      right: 120px;
      */
+ }
+
+ .logo{
+    position: absolute;
+    margin-top: 0;
+    padding-top: 0;
+    width: 30%;
  }
 
 
