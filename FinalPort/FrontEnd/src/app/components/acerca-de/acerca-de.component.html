@@ -21,7 +21,7 @@
       <h1>Sobre Mi</h1>
       <h4>{{ persona.descripcion }}</h4>
 
-      <div class="pencil">
+      <div class="pencil" *ngIf="isLogged">
         <a routerLink="/editarAcercaDe/{{ persona.id }}" class="btnm"
           ><i class="fa fa-pencil" routerLink="/home"></i
         ></a>

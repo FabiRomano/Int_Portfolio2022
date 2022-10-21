@@ -16,7 +16,7 @@ div{
 
 span{
     position: relative;
-    top: 80px;
+    top: 5px;
     
 } 
 
@@ -36,17 +36,7 @@ span{
     border-radius: 50%;
 }
 
-@media (max-width:575px) {
-    .pencil {
-      position: absolute;
-      bottom: 470px;
-      right: 10px;
-      width: 50px;
-      height: 50px;
-      background: transparent;
-      
-    }
-}
+
 
 
 a{
@@ -70,6 +60,7 @@ h4{
     border-radius: 25px;
     padding: 5%;
     
+    
    
    
 }
@@ -82,9 +73,9 @@ h4{
     width: 200px;
     border-radius: 50%;
     left: 70px;;
-    top: 480px;
-    box-shadow: -10px -5px 10px #c5c5c55b;
-    border:1px solid aqua;
+    top: 380px;
+    box-shadow: 0px 15px 30px aqua,
+    -0px -15px 30px aqua;
     
 
 
@@ -96,13 +87,21 @@ h4{
         width: 150px;
         border-radius: 100%;
         left:210px;
-        top: 480px;
-        box-shadow: 4px -3px 4px rgba(226, 28, 160, 0.5);
-        border:1px solid #b10987;
-        
-    
-
+        top: 370px;
+        box-shadow: 0px 15px 30px #c5c5c5,
+    -0px -15px 30px #c5c5c5;
     }
+    .pencil {
+        position: absolute;
+        bottom: 470px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        
+      }
+
+    
     }
     
 /* etiqueta de nombre */
@@ -111,7 +110,8 @@ h4{
     font-size: 35px;
     position: relative;
     left: 2px;
-    /* bottom: 180px; */
+ 
+    bottom: 100px;
     background: transparent;
     
     /* margin-top: 5px; */
@@ -138,13 +138,13 @@ p{
     /* margin-top: 5px; */
     position: relative;
     /* bottom: 140px ; */
-    top: 50px;
+    bottom:  60px;
     right: 200px; 
     background: transparent;
     border: solid 1px aqua;
     border-radius: 10px;
-    box-shadow: 15px 15px 25px #ce1fe6ad,
-    -15px -15px 25px #ce1fe6ad;
+    box-shadow: 0px 15px 30px #c5c5c5,
+    -0px -15px 30px #c5c5c5;
   
 }
 

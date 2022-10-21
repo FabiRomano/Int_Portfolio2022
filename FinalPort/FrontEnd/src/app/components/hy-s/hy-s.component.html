@@ -1,7 +1,7 @@
 <div class="row">
   <h1>Hard & Soft skills</h1>
   <div class="col-lg-2">
-    <button type="button" routerLink="/nuevaHys" class="boton">
+    <button type="button" *ngIf="isLogged" routerLink="/nuevaHys" class="boton">
       Nueva Skill
     </button>
   </div>
@@ -33,11 +33,11 @@
 
     <div>
       <td>
-        <button class="bot-editar" routerLink="/editarHys/{{ skill.idSkills }}">
+        <button class="bot-editar" *ngIf="isLogged" routerLink="/editarHys/{{ skill.idSkills }}">
           <i class="bi bi-pencil-fill"></i> Editar </button>
               </td>
       <td>
-        <button class="bot-editar" (click)="onEliminarSkills(skill.idSkills)">
+        <button class="bot-editar" *ngIf="isLogged" (click)="onEliminarSkills(skill.idSkills)">
           <i class="bi bi-trash-fill"></i> Eliminar </button>
          
        
