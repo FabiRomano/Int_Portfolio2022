@@ -4,13 +4,13 @@ app-social{
     margin-top: 10px;
     border-radius: 5px;
 } */
-
+*{background:transparent}
 
 .menu{
-    display:block;
+    display:flex;
     justify-content: space-between;
     position: absolute;
-    top: 50px;
+    top: 5px;
     left: 0;
     width: 100%;
     background: transparent;

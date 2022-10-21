@@ -1,3 +1,15 @@
+*{
+  background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
+  padding:0;
+  margin:0;
+  
+  
+}
+
+.arriba{
+  background: transparent;
+}
+
 
 .respmenu a {
   color: inherit;
@@ -11,13 +23,14 @@
   text-shadow: 1px 1px black;
   justify-content: center;
   font-family: cursive;
-  /* border: solid 1px #ddd; */
+  border: solid 1px  aqua;
   color: aliceblue;
+  
   
 }
 
 .respmenu a:hover{
-  color: darkviolet;
+  color: rgb(16, 11, 19);
   transition: all 0.3s ease-in-out;
 }
 
@@ -33,7 +46,9 @@
   top: 0;
   width: 48px;
   height: 48px;
-
+  background:  linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
+  box-shadow: 0px 15px 30px #c5c5c5,
+  -0px -15px 30px #c5c5c5;
 }
 
 .respmenu .fa-bars,
@@ -41,6 +56,7 @@
   position: absolute;
   font-size: 48px;
   pointer-events: none;
+  
   
 }
 
@@ -52,7 +68,7 @@
 .respmenu {
   color: white;
   position: relative;
-  /* background: #123456; */
+  /* background: rgba(0, 0, 0, 0.459); */
   min-height: 4rem;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -62,7 +78,7 @@
 
 .respmenu nav {
   display: none;
-  
+
 }
 
 .respmenu input:checked ~ nav {
@@ -80,3 +96,21 @@
 ul {
   list-style: none;
 }
+
+
+/*botones de iniciar y cerrar secion*/
+
+.esp{
+  border-color: aqua;
+  color: white;
+  width: 100px;
+  background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
+ 
+
+}
+
+.esp:hover{
+  color: aqua;
+  transition: all .3s ease-in-out;
+}
+
