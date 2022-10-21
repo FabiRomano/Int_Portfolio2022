@@ -30,7 +30,7 @@
 }
 
 .respmenu a:hover{
-  color: rgb(16, 11, 19);
+  color: aqua;
   transition: all 0.3s ease-in-out;
 }
 

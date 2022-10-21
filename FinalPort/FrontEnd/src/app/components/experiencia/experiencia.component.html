@@ -1,11 +1,11 @@
 <div class="row">
   <h1>Experiencia laboral</h1>
   <div class="col-lg-2">
-      <button type="button" class="boton" *ngIf="isLogged" routerLink="/nuevaExperiencia"  > Nueva Experiencia</button>
+      <button type="button" class="boton"  routerLink="/nuevaExperiencia"  > Nueva Experiencia</button>
 </div>
 
   <div class="col lg 1"></div>
-  <div class="col-lg-10">
+  <div class="col-lg-12">
       <table class="table">
            <tbody> 
       
@@ -18,12 +18,12 @@
                  
                   <td >
                     
-                      <button class="bot-editar"  *ngIf="isLogged"
+                      <button class="bot-editar"  
                       routerLink="/editarExperiencia/{{experience.idExp}}">
                           <i class="bi bi-pencil-fill"></i> Editar</button>
                   </td>
                   <td  >
-                      <button class="bot-editar" *ngIf="isLogged"
+                      <button class="bot-editar" 
                     (click)="onEliminarExperience(experience.idExp)">
                           <i class="bi bi-trash-fill"></i> Eliminar</button>
                   </td>
