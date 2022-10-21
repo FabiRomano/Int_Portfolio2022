@@ -1,13 +1,14 @@
 
 
 footer{
-    color: #fefefe;
-    font-size: 14px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 10px -4px 10px rgba(226, 28, 160, 0.5);
-    padding: 15px;
+    /* box-shadow: 10px -4px 10px rgba(226, 28, 160, 0.5); */
+    /* padding: 10px; */
 
     
     

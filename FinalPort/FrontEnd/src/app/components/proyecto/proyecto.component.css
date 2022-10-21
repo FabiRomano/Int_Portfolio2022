@@ -1,20 +1,36 @@
   tbody{
     position: relative;
+  
     box-shadow: 0px 15px 30px aqua,
     -0px -15px 30px aqua;
-    border: 1px solid rgb(26, 24, 24);
-    padding: 5%;
+    border: 1px solid  rgb(223, 63, 116);
+    margin-top: 5px;
+    padding: 3%;
     /* outline: height 5px; */
     border-radius: 20px;
-    margin-left: 30px;
+    margin-left: 10px;
+  }
+
+  
+  .table{
+    position: relative;
+   top: 10%;
   }
 
   @media (max-width:575px) {
     tbody{
       position: relative;
-      left: 10px;
-   
+      left: 20px;
+      border-radius: 20px;
+    
       padding: 30px;
     }
+    td{
+      padding: 10px;
+      border-radius: 20px;
+    
+    }
+
+   
   }
   

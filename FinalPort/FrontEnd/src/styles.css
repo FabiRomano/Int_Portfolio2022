@@ -26,7 +26,7 @@
    padding: 5%;
    display: flex;
    border-radius: 25px;
-   margin-top: 30px;
+   /* margin-top: 30px; */
 
   
    
@@ -48,7 +48,7 @@ td{
 h1 , h5{
   text-align: center;
   font-family: cursive;
-  border: solid 3px ;
+  /* border: solid 3px ; */
   background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
   border-radius: 10px;
   color: aliceblue;
@@ -66,15 +66,15 @@ h1 , h5{
 
 .bot-editar
 {
-  border: solid 7px #ad0597;
+  border: solid 5px #ad0597;
  
-  padding: 5px 15px;
+  padding: 3px 10px;
   transition: border 1s;
   position: relative;
   overflow: hidden;
   transition: color 1s;
-  margin: 10px;
-  font-size: 20px;
+  margin: 5px;
+  font-size: 15px;
   font-family: cursive;
   color:aqua;
   border-radius: 5px;
@@ -100,6 +100,8 @@ h1 , h5{
   align-items: center;
   font-size: 25px;
   text-align:center;
+  color: aliceblue;
+  border-radius: 10px;
 
 
 }
@@ -109,7 +111,7 @@ h1 , h5{
                 -15px -15px 25px #ce1fe6ad;
     overflow: hidden;
     border-radius: 25px;
-    border: solid 1px red;
+    border: solid 1px aqua;
 }
 
 .tarjeta{
@@ -120,15 +122,15 @@ h1 , h5{
 }
 .boton {
  
-  border:7px solid rgb(223, 63, 116);
+  border:5px solid rgb(223, 63, 116);
   color: aqua;
-  padding: 5px 15px;
+  /* padding: 5px 10px; */
   transition: border 1s;
   position: relative;
   overflow: hidden;
   transition: color 1s;
-  margin: 10px;
-  font-size: 20px;
+  margin: 5px;
+  font-size: 15px;
   font-family: cursive;
   border-radius: 10px;
  
@@ -137,7 +139,7 @@ h1 , h5{
 
 
 .boton:hover {
-    border: solid 7px aqua;
+    border: solid 5px aqua;
     color: rgb(223, 63, 116);
 }
 
