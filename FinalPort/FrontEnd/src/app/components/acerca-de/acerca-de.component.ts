@@ -26,6 +26,9 @@ export class AcercaDeComponent implements OnInit {
   this.verPersona();
   if(this.tokenService.getToken()){
     this.isLogged=true;
+    
+    console.log(this.isLogged); 
+
   }else{
     this.isLogged=false;
   }
