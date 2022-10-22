@@ -46,10 +46,13 @@
   top: 0;
   width: 48px;
   height: 48px;
-  background:  linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
-  box-shadow: 0px 15px 30px #c5c5c5,
-  -0px -15px 30px #c5c5c5;
+  background:  transparent;
+  border: solid 3px  aqua;
+  color: #ad0597;
+  box-shadow: 0px -5px 20px #c5c5c5,
+  -0px -5px 20px #c5c5c5;
 }
+
 
 
 .respmenu .fa-bars,
@@ -67,7 +70,7 @@
 }
 
 .respmenu {
-  color: white;
+  color:aqua;
   position: relative;
   /* background: rgba(0, 0, 0, 0.459); */
   min-height: 4rem;

@@ -16,7 +16,7 @@ span {
 }
 
 .pencil {
-  box-shadow: 10px -10px 30px #d31ed3, 10px -10px 50px aqua;
+  box-shadow: 10px -10px 30px #f5f1f5, 10px -10px 50px aqua;
 
   position: relative;
  left: 880px;
@@ -27,6 +27,7 @@ span {
   background: transparent;
   border: aqua 1px solid;
   border-radius: 50%;
+ 
 }
 
 a {

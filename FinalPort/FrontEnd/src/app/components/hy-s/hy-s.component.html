@@ -18,8 +18,8 @@
       [titleColor]="'#00FFFF'"
       [showTitle]="true"
       [showImage]="true"
-      [imageHeight]="70"
-      [imageWidth]="70"
+      [imageHeight]="75"
+      [imageWidth]="75"
       [showUnits]="false"
       [showSubtitle]="false"
       [outerStrokeWidth]="10"
@@ -33,72 +33,74 @@
 
     <div>
       <td>
-        <button class="bot-editar" *ngIf="isLogged" routerLink="/editarHys/{{ skill.idSkills }}">
-          <i class="bi bi-pencil-fill"></i> Editar </button>
-              </td>
-      <td>
-        <button class="bot-editar" *ngIf="isLogged" (click)="onEliminarSkills(skill.idSkills)">
-          <i class="bi bi-trash-fill"></i> Eliminar </button>
-         
-       
+        <button
+          class="bot-editar"
+          *ngIf="isLogged"
+          routerLink="/editarHys/{{ skill.idSkills }}"
+        >
+          <i class="bi bi-pencil-fill"></i> Editar
+        </button>
       </td>
-
-      
+      <td>
+        <button
+          class="bot-editar"
+          *ngIf="isLogged"
+          (click)="onEliminarSkills(skill.idSkills)"
+        >
+          <i class="bi bi-trash-fill"></i> Eliminar
+        </button>
+      </td>
     </div>
   </div>
 
-       
- 
-  
   <div class="bubles">
-    <span style="--1:11;"></span>
-    <span style="--1:12;"></span>
-    <span style="--1:24;"></span>
-    <span style="--1:10;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:23;"></span>
-    <span style="--1:18;"></span>
-    <span style="--1:16;"></span>
-    <span style="--1:19;"></span>
-    <span style="--1:20;"></span>
-    <span style="--1:22;"></span>
-    <span style="--1:25;"></span>
-    <span style="--1:18;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:15;"></span>
-    <span style="--1:13;"></span>
-    <span style="--1:26;"></span>
-    <span style="--1:17;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:11;"></span>
-    <span style="--1:12;"></span>
-    <span style="--1:24;"></span>
-    <span style="--1:10;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:23;"></span>
-    <span style="--1:18;"></span>
-    <span style="--1:16;"></span>
-    <span style="--1:19;"></span>
-    <span style="--1:20;"></span>
-    <span style="--1:22;"></span>
-    <span style="--1:25;"></span>
-    <span style="--1:18;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:15;"></span>
-    <span style="--1:13;"></span>
-    <span style="--1:26;"></span>
-    <span style="--1:17;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:26;"></span>
-    <span style="--1:17;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:26;"></span>
-    <span style="--1:17;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:14;"></span>
-
-</div>
+    <span style="--1: 11"></span>
+    <span style="--1: 12"></span>
+    <span style="--1: 24"></span>
+    <span style="--1: 10"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 23"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 16"></span>
+    <span style="--1: 19"></span>
+    <span style="--1: 20"></span>
+    <span style="--1: 22"></span>
+    <span style="--1: 25"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 15"></span>
+    <span style="--1: 13"></span>
+    <span style="--1: 26"></span>
+    <span style="--1: 17"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 11"></span>
+    <span style="--1: 12"></span>
+    <span style="--1: 24"></span>
+    <span style="--1: 10"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 23"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 16"></span>
+    <span style="--1: 19"></span>
+    <span style="--1: 20"></span>
+    <span style="--1: 22"></span>
+    <span style="--1: 25"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 15"></span>
+    <span style="--1: 13"></span>
+    <span style="--1: 26"></span>
+    <span style="--1: 17"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 26"></span>
+    <span style="--1: 17"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 26"></span>
+    <span style="--1: 17"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 14"></span>
+  </div>
 </div>
