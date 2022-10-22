@@ -56,8 +56,9 @@ h4 {
     border-radius: 50%;
     left: 40px;
     top: 380px;
-    border: solid 3px rgb(68, 19, 206);
-    box-shadow: 0px 5px 10px aqua, -0px -5px 10px aqua;
+    /* border: solid 3px rgb(68, 19, 206); */
+    box-shadow: 0px -15px 30px aqua,
+     -0px -15px 30px aqua;
     /* box-shadow: 0px -15px 30px #c5c5c5,
     -0px -15px 30px #c5c5c5; */
   }
@@ -72,9 +73,10 @@ h4 {
   border-radius: 100%;
   padding: 1rem;
   border: solid 2px aqua;
-  box-shadow: 0px 5px 10px #c5c5c5, -0px -5px 10px #c5c5c5;
-
-  bottom: 100px;
+  /* box-shadow: 0px 5px 10px #c5c5c5,
+   -0px -5px 10px #c5c5c5; */
+   border: solid 5px #ad0597;
+  bottom: 120px;
   background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
 
   /* margin-top: 5px; */
@@ -125,11 +127,12 @@ p {
   /* margin-top: 5px; */
   position: relative;
   /* bottom: 140px ; */
-  bottom: 50px;
+  bottom: 80px;
   right: 12px;
   /* left: 8px; */
-  border: solid 2px aqua;
-  box-shadow: 0px 5px 10px #c5c5c5, -0px -5px 10px #c5c5c5;
+  border: solid 2px #ad0597;;
+  box-shadow: 0px 5px 10px aqua,
+   -0px -5px 10px   aqua;
   border-radius: 10px;
   /* box-shadow: 0px 15px 30px #c5c5c5,
     -0px -15px 30px #c5c5c5; */
