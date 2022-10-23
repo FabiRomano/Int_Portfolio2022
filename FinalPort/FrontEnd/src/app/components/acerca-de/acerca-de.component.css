@@ -21,7 +21,7 @@ span {
   position: relative;
  left: 880px;
 
-  bottom: 430px;
+  bottom: 550px;
   width: 60px;
   height: 60px;
   background: transparent;
@@ -45,7 +45,7 @@ h4 {
     -0px -15px 30px #c5c5c5; */
   border: 1px solid aqua;
   border-radius: 25px;
-  padding: 5%;
+  padding: 10%;
   box-shadow: 0px -5px 20px aqua, -0px -5px 20px aqua;
 }
 
@@ -112,12 +112,17 @@ h4 {
   }
 
   .pencil {
-    position: absolute;
-    bottom: 300px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
+    box-shadow: 10px -10px 30px #f5f1f5, 10px -10px 50px aqua;
+
+    position: relative;
+   left: 450px;
+  
+    bottom: 650px;
+    width: 60px;
+    height: 60px;
     background: transparent;
+    border: aqua 1px solid;
+    border-radius: 50%;
   }
 }
 

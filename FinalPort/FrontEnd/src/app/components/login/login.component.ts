@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
       (err) => {
         this.isLogged = false;
         this.isLogginFail = true;
-        alert('error al logearse');
+        // alert('error al logearse');
         this.router.navigate(['']);
       })
   }

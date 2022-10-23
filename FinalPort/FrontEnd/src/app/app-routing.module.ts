@@ -14,13 +14,14 @@ import { EditarHysComponent } from './components/hy-s/editar-hys/editar-hys.comp
 import { HySComponent } from './components/hy-s/hy-s.component';
 import { NuevaHysComponent } from './components/hy-s/nueva-hys/nueva-hys.component';
 import { LoginComponent } from './components/login/login.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { EditarProyectosComponent } from './components/proyecto/editar-proyectos/editar-proyectos.component';
 import { NuevosProyectosComponent } from './components/proyecto/nuevos-proyectos/nuevos-proyectos.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 const routes: Routes = [
-
-  {path:  '', component: HomeComponent },
+  {path: '', component: HomeComponent},
+  // {path:  '', component: LoginComponent },
   {path: 'login', component: LoginComponent},
   {path: 'educacion', component: EducacionComponent },
   {path: 'editarEducacion/:idEdu', component: EditarEducacionComponent },
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'acercade', component: AcercaDeComponent },
   { path: 'editarAcercaDe/:id', component:EditarAcercaDeComponent},
   { path: 'contacto', component: ContactoComponent},
+ 
 
   
 ];
