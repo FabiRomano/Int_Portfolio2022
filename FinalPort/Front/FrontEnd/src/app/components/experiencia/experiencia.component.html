@@ -1,92 +1,97 @@
 <div class="row">
   <h1>Experiencia laboral</h1>
   <div class="col-lg-2">
-      <button type="button" class="boton" *ngIf="isLogged" routerLink="/nuevaExperiencia"  > Nueva Experiencia</button>
-</div>
+    <button
+      type="button"
+      class="boton"
+      *ngIf="isLogged"
+      routerLink="/nuevaExperiencia"
+    >
+      Nueva Experiencia
+    </button>
+  </div>
 
   <div class="col lg 1"></div>
   <div class="col-lg-12">
-      <table class="table">
-           <tbody> 
-      
-              <tr *ngFor="let experience of experiences">
-                
-                  <td>{{experience.empresaExp}} </td>
-                   <td>{{experience.descripcionExp}}</td>
-                   <td>{{experience.fechaInicioExp}}</td>
-                   <td>{{experience.fechaFinExp}}</td>    
-                 
-                  <td >
-                    
-                      <button class="bot-editar" *ngIf="isLogged" 
-                      routerLink="/editarExperiencia/{{experience.idExp}}">
-                          <i class="bi bi-pencil-fill"></i> Editar</button>
-                  </td>
-                  <td  >
-                      <button class="bot-editar" *ngIf="isLogged"
-                    (click)="onEliminarExperience(experience.idExp)">
-                          <i class="bi bi-trash-fill"></i> Eliminar</button>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let experience of experiences">
+          <td>{{ experience.empresaExp }}</td>
+          <td>{{ experience.descripcionExp }}</td>
+          <td>{{ experience.fechaInicioExp }}</td>
+          <td>{{ experience.fechaFinExp }}</td>
+
+          <td>
+            <button
+              class="bot-editar"
+              *ngIf="isLogged"
+              routerLink="/editarExperiencia/{{ experience.idExp }}"
+            >
+              <i class="bi bi-pencil-fill"></i> Editar
+            </button>
+          </td>
+          <td>
+            <button
+              class="bot-editar"
+              *ngIf="isLogged"
+              (click)="onEliminarExperience(experience.idExp)"
+            >
+              <i class="bi bi-trash-fill"></i> Eliminar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
-  
   <div class="bubles">
-    <span style="--1:11;"></span>
-    <span style="--1:12;"></span>
-    <span style="--1:24;"></span>
-    <span style="--1:10;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:23;"></span>
-    <span style="--1:18;"></span>
-    <span style="--1:16;"></span>
-    <span style="--1:19;"></span>
-    <span style="--1:20;"></span>
-    <span style="--1:22;"></span>
-    <span style="--1:25;"></span>
-    <span style="--1:18;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:15;"></span>
-    <span style="--1:13;"></span>
-    <span style="--1:26;"></span>
-    <span style="--1:17;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:11;"></span>
-    <span style="--1:12;"></span>
-    <span style="--1:24;"></span>
-    <span style="--1:10;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:23;"></span>
-    <span style="--1:18;"></span>
-    <span style="--1:16;"></span>
-    <span style="--1:19;"></span>
-    <span style="--1:20;"></span>
-    <span style="--1:22;"></span>
-    <span style="--1:25;"></span>
-    <span style="--1:18;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:15;"></span>
-    <span style="--1:13;"></span>
-    <span style="--1:26;"></span>
-    <span style="--1:17;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:26;"></span>
-    <span style="--1:17;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:14;"></span>
-    <span style="--1:26;"></span>
-    <span style="--1:17;"></span>
-    <span style="--1:21;"></span>
-    <span style="--1:14;"></span>
-
+    <span style="--1: 11"></span>
+    <span style="--1: 12"></span>
+    <span style="--1: 24"></span>
+    <span style="--1: 10"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 23"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 16"></span>
+    <span style="--1: 19"></span>
+    <span style="--1: 20"></span>
+    <span style="--1: 22"></span>
+    <span style="--1: 25"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 15"></span>
+    <span style="--1: 13"></span>
+    <span style="--1: 26"></span>
+    <span style="--1: 17"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 11"></span>
+    <span style="--1: 12"></span>
+    <span style="--1: 24"></span>
+    <span style="--1: 10"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 23"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 16"></span>
+    <span style="--1: 19"></span>
+    <span style="--1: 20"></span>
+    <span style="--1: 22"></span>
+    <span style="--1: 25"></span>
+    <span style="--1: 18"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 15"></span>
+    <span style="--1: 13"></span>
+    <span style="--1: 26"></span>
+    <span style="--1: 17"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 26"></span>
+    <span style="--1: 17"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 14"></span>
+    <span style="--1: 26"></span>
+    <span style="--1: 17"></span>
+    <span style="--1: 21"></span>
+    <span style="--1: 14"></span>
+  </div>
 </div>
-</div>
-
-
-      
-        
-    

@@ -15,11 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins="https://portfoliofabiolaromano.web.app")
+
+@CrossOrigin(origins = "https://localhost:4200")
+
 @RequestMapping("/proyectos")
 public class ProyectosController {
-    
-          private final ProyectosService proyectosService;
+    private final ProyectosService proyectosService;
 
     public ProyectosController(ProyectosService proyectosService) {
         this.proyectosService = proyectosService;

@@ -1,103 +1,84 @@
-.row
-{
+.row {
+  margin-left: 0;
+  margin-right: 0;
+
   border-radius: 10%;
-  border: solid 1px  rgb(223, 63, 116) ;
-  background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211))
-  
+  border: solid 1px rgb(223, 63, 116);
+  background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
 }
 
+.button {
+  float: right;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 1px rgb(223, 63, 116);
+  box-shadow: 0px 15px 30px aqua, -0px -15px 30px aqua;
+}
 
+.button a {
+  text-decoration: none;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  text-align: center;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -0px 5px 10px rgba(226, 28, 160, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.button a:hover {
+  transform: scale(1.5);
+}
 
-.button
-{
-    float: right;
-    padding: 3%;
-    /* min-width:50px; */
+#correo {
+  color: bisque;
+}
+
+#telefono {
+  color: deeppink;
+}
+
+#whatsapp {
+  color: rgb(64, 235, 87);
+}
+
+.btn {
+  border-width: medium;
+  border-radius: 30px;
+}
+
+p {
+  color: aliceblue;
+  font-size: 20px;
+  font-style: cursive;
+  margin: 20px;
+}
+
+/*---para la vista de celular ---*/
+
+@media (max-width: 575px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .button {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border-radius: 50%;
-    border: solid 1px  rgb(223, 63, 116);
-    box-shadow: 0px 15px 30px aqua,
-    -0px -15px 30px aqua;
-   
-    
-}
+  }
+  .button a {
+    margin: 0.3em;
+  }
 
-.button a
-{
-    text-decoration: none;
-    font-size: 35px;
-    width: 50px;
-    height: 50px;
-    margin: 20px;
-    text-align: center;
-    background:transparent;
-    border-radius: 50%;
-    box-shadow: -0px 5px 10px rgba(226, 28, 160, 0.5);
-    transition: all .3s ease-in-out;
-  
-}
-.button a:hover
-{
-    transform: scale(1.50);
-  
-}
-
-#correo
-{
-    color: bisque;
-}
-
-#telefono
-{
-    color: deeppink;
-}
-
-#whatsapp
-{
-    color: rgb(64, 235, 87);
-}
-
-#flecha
-{
-    color: darkviolet;
-}
-
-
-.btn
-
-{
-    border-width:medium;
-    border-radius: 30px;
-}
- 
-p 
-{
-    /* margin-top: 20px; */
-   color: aliceblue;
-   font-size: 20px;
-   font-style: italic !important;
-   margin: 20px;
-  
- 
- 
-}
-
- /*---para la vista de celular ---*/
- 
- @media (max-width: 575px){
-    .container{
-        flex-direction: column;
-    
-    }
-    
-    .button{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .button a{
-        margin: 0.3em;
-    }
+  p {
+    color: aliceblue;
+    font-size: 15px;
+    font-style: cursive;
+    margin: 15px;
+    background: transparent;
+  }
 }

@@ -1,26 +1,23 @@
-*{background:transparent}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
+* {
+  background: transparent;
+}
 
+#logoAP {
+  width: 140px;
+  border-radius: 50px;
+  position: relative;
+  border: solid 2px aqua;
+  box-shadow: 0px 5px 10px #c5c5c5, -0px -5px 10px #c5c5c5;
+}
 
- #logoAP{
-     width: 140px;
-     border-radius: 50px;
-     /* margin-top: 5px; */
-     position: relative;
-     /* bottom: 120px;
-     right: 120px;
-     */
-     border: solid 2px aqua;
-     box-shadow: 0px 5px 10px #c5c5c5,
-     -0px -5px 10px #c5c5c5;
- }
-
- .logo{
-    position: absolute;
-    margin-top: 0;
-    padding-top: 0;
-    width: 30%;
- }
-
-
- 
+.logo {
+  position: absolute;
+  margin-top: 0;
+  padding-top: 0;
+  width: 30%;
+}

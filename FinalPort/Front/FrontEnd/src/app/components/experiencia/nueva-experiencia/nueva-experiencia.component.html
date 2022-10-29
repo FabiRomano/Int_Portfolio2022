@@ -1,52 +1,56 @@
 <div class="inicio">
-    <div class="container">
-        <div class="row">
-            <div class="tarjeta" >
-                <form (ngSubmit)="onAgregarExperience()"  novalidate #f="ngForm">
-                    <div class="form-group">
-                        <label for="nombreEmpresa">Nombre de la Empresa</label> 
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="nombreEmpresa" 
-                        name="nombreEmpresa" 
-                        [(ngModel)]="empresaExp" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="fechaIniExp">Fecha de inicio</label> 
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="fechaIniExp" 
-                        name="fechaIniExp" 
-                        [(ngModel)]="fechaInicioExp" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="fechaFinExp">Fecha de finalizacion</label> 
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="fechaFinExp" 
-                        name="fechaFinExp" 
-                        [(ngModel)]="fechaFinExp" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="titutlo">Puesto/ Descripcion</label> 
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="titutlo"
-                        name="descripcion" 
-                        [(ngModel)]="descripcionExp" required="">
-                    </div>
-                  
-                    <button class="boton" >
-                        Añadir experiencia
-                    </button>
-                    
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="tarjeta">
+        <form (ngSubmit)="onAgregarExperience()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="nombreEmpresa">Nombre de la Empresa</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombreEmpresa"
+              name="nombreEmpresa"
+              [(ngModel)]="empresaExp"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="fechaIniExp">Fecha de inicio</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fechaIniExp"
+              name="fechaIniExp"
+              [(ngModel)]="fechaInicioExp"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="fechaFinExp">Fecha de finalizacion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fechaFinExp"
+              name="fechaFinExp"
+              [(ngModel)]="fechaFinExp"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="titutlo">Descripcion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="titutlo"
+              name="descripcion"
+              [(ngModel)]="descripcionExp"
+              required=""
+            />
+          </div>
 
+          <button class="boton">Añadir experiencia</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,54 +1,57 @@
 <div class="inicio">
-    <div class="container">
-        <div class="row">
-            <div class="tarjeta">
-                <form (ngSubmit)="onAgregarProyec()" novalidate #f="ngForm">
-                    <div class="form-group">
-                        <label for="instituto">Nombre del Proyecto</label> 
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="instituto" 
-                        name="instituto" 
-                        [(ngModel)]="nombreProyectos" required="">
-                    </div>
-                   
-                    <div class="form-group">
-                        <label for="fechaIniEdu">Fecha de inicio</label> 
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="fechaIniEdu" 
-                        name="fechaIniEdu" 
-                        [(ngModel)]="inicioProyectos" required="">
-                    </div>
-                    <div class="form-group">
-                        <label for="fechaFinEdu">Fecha de finalizacion</label> 
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="fechaFinEdu" 
-                        name="fechaFinEdu" 
-                        [(ngModel)]="finProyectos" required="">
-                    </div>
-                    <div class="form-group">
+  <div class="container">
+    <div class="row">
+      <div class="tarjeta">
+        <form (ngSubmit)="onAgregarProyec()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="instituto">Nombre del Proyecto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="instituto"
+              name="instituto"
+              [(ngModel)]="nombreProyectos"
+              required=""
+            />
+          </div>
 
-                        
-                        <label for="titutlo">Descripcion</label> 
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="titutlo" 
-                        name="titutlo" 
-                        [(ngModel)]="descripcionProyectos" required="">
-                    </div>
-                
-                    
-                    <button class="boton">
-                        Agregar Educacion
-                    </button>
-                </form>
-            </div>
-        </div>
+          <div class="form-group">
+            <label for="fechaIniEdu">Fecha de inicio</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fechaIniEdu"
+              name="fechaIniEdu"
+              [(ngModel)]="inicioProyectos"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="fechaFinEdu">Fecha de finalizacion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fechaFinEdu"
+              name="fechaFinEdu"
+              [(ngModel)]="finProyectos"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="titutlo">Descripcion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="titutlo"
+              name="titutlo"
+              [(ngModel)]="descripcionProyectos"
+              required=""
+            />
+          </div>
+
+          <button class="boton">Agregar Proyectos</button>
+        </form>
+      </div>
     </div>
+  </div>
 </div>

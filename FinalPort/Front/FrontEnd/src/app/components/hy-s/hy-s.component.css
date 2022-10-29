@@ -1,19 +1,18 @@
-
-
-.circulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-   
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-td{
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
+.circulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
-   
- 
+td {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}

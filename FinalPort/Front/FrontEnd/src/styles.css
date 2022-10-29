@@ -4,9 +4,11 @@
   background-image: url(https://i.ibb.co/s6zLGST/banner.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+ 
 }
 
 .row {
+  margin: 0;
   padding: 80px;
 
   /* margin-left: 10%; */
@@ -21,6 +23,7 @@
   border-radius: 30px;
   padding: 40%;
   margin-top: 80px;
+ 
 }
 
 td {
@@ -33,6 +36,7 @@ td {
   height: 80px;
   
   background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
+  height: max-content;
 }
 
 h1,
@@ -149,6 +153,7 @@ h5 {
 @media screen and (max-width: 600px) {
   table {
     width: 100%;
+    
   }
   thead {
     display: none;

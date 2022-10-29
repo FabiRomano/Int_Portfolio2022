@@ -1,56 +1,55 @@
 <div class="inicio">
-    <div class="container" *ngIf="educacion">
-      <div class="row">
-        <div class="tarjeta">
-          <form (ngSubmit)="onEditarEducation()" novalidate #f="ngForm">
-            <div class="form-group">
-              <label for="instituto">Nombre de la institucion</label>
-              <input
-                type="text"
-                class="form-control"
-                id="instituto"
-                name="instituto"
-                [(ngModel)]="educacion.establecimientoEdu"
-                required=""
-              />
-          
-            </div>
-            <div class="form-group">
-              <label for="fechaIniEdu">Fecha de inicio</label>
-              <input
-                type="text"
-                class="form-control"
-                id="fechaIniEdu"
-                name="fechaIniEdu"
-                [(ngModel)]="educacion.fechaInicioEdu"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="fechaFinEdu">Fecha de finalizacion</label>
-              <input
-                type="text"
-                class="form-control"
-                id="fechaFinEdu"
-                name="fechaFinEdu"
-                [(ngModel)]="educacion.fechaFinEdu"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="titutlo">Titulo</label>
-              <input
-                type="text"
-                class="form-control"
-                id="titutlo"
-                name="titutlo"
-                [(ngModel)]="educacion.certificadoEdu"
-                required=""
-              />
-            </div>
-            <button class="boton">Editar Educacion</button>
-          </form>
-        </div>
+  <div class="container" *ngIf="educacion">
+    <div class="row">
+      <div class="tarjeta">
+        <form (ngSubmit)="onEditarEducation()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="instituto">Nombre de la institucion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="instituto"
+              name="instituto"
+              [(ngModel)]="educacion.establecimientoEdu"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="fechaIniEdu">Fecha de inicio</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fechaIniEdu"
+              name="fechaIniEdu"
+              [(ngModel)]="educacion.fechaInicioEdu"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="fechaFinEdu">Fecha de finalizacion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fechaFinEdu"
+              name="fechaFinEdu"
+              [(ngModel)]="educacion.fechaFinEdu"
+              required=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="titutlo">Titulo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="titutlo"
+              name="titutlo"
+              [(ngModel)]="educacion.certificadoEdu"
+              required=""
+            />
+          </div>
+          <button class="boton">Editar Educacion</button>
+        </form>
       </div>
     </div>
   </div>
+</div>

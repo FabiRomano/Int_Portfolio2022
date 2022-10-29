@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://localhost:8080'
+   apiBaseUrl:'https://backmio.herokuapp.com'
+
+  // apiBaseUrl: 'http://localhost:8080'
 };
 
 /*

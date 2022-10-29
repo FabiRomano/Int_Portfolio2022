@@ -1,39 +1,36 @@
-*{
+* {
   background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
-  padding:0;
-  margin:0;
-  
-  
+  padding: 0;
+  margin: 0;
 }
 
-.arriba{
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.arriba {
   background: transparent;
 }
-
 
 .respmenu a {
   color: inherit;
   text-decoration: none;
   display: block;
   padding: 10px 20px;
-  /* border-bottom: 2px solid #456789; */
   max-width: 200px;
   background: transparent;
-  /* font-variant: small-caps; */
   text-shadow: 1px 1px black;
   justify-content: center;
   font-family: cursive;
-  border: solid 1px  aqua;
+  border: solid 1px aqua;
   color: aliceblue;
-  
-  
 }
 
-.respmenu a:hover{
+.respmenu a:hover {
   color: aqua;
   transition: all 0.3s ease-in-out;
 }
-
 
 .respmenu input[type="checkbox"],
 .respmenu .fa-bars,
@@ -46,43 +43,33 @@
   top: 0;
   width: 48px;
   height: 48px;
-  background:  transparent;
-  border: solid 3px  aqua;
+  background: transparent;
+  border: solid 3px aqua;
   color: #ad0597;
-  box-shadow: 0px -5px 20px #c5c5c5,
-  -0px -5px 20px #c5c5c5;
+  box-shadow: 0px -5px 20px #c5c5c5, -0px -5px 20px #c5c5c5;
 }
-
-
 
 .respmenu .fa-bars,
 .respmenu .fa-times {
   position: absolute;
   font-size: 48px;
   pointer-events: none;
-  
-  
 }
 
 .respmenu input[type="checkbox"] {
   opacity: 0;
-  
 }
 
 .respmenu {
-  color:aqua;
+  color: aqua;
   position: relative;
-  /* background: rgba(0, 0, 0, 0.459); */
   min-height: 4rem;
   margin-right: 1rem;
   margin-top: 1rem;
-  
 }
-
 
 .respmenu nav {
   display: none;
-
 }
 
 .respmenu input:checked ~ nav {
@@ -101,21 +88,17 @@ ul {
   list-style: none;
 }
 
-
 /*botones de iniciar y cerrar secion*/
 
-.esp{
+.esp {
   border-color: aqua;
   color: white;
   width: 100px;
   font-size: 20px;
   background: linear-gradient(rgb(68, 19, 206), rgb(135, 22, 211));
- 
-
 }
 
-.esp:hover{
+.esp:hover {
   color: aqua;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
